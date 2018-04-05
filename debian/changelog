@@ -1,3 +1,9 @@
+pop-gnome-shell-theme (3.1.1) bionic; urgency=medium
+
+  * GNOME Shell theme split into separate maintenance.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 05 Apr 2018 10:44:47 -0600
+
 pop-gtk-theme (3.1.1) bionic; urgency=medium
 
   * Embedded Terminal styling
@@ -24,8 +30,8 @@ pop-gtk-theme (3.0.3) artful; urgency=medium
 
 pop-gtk-theme (3.0.2) artful; urgency=medium
 
-  * Ensure better headerbar size in -slim. 
-  * Make sure titlebuttons are all round. 
+  * Ensure better headerbar size in -slim.
+  * Make sure titlebuttons are all round.
 
  -- Ian Santopietro <ian@system76.com>  Tue, 16 Jan 2018 11:51:15 -0700
 
@@ -37,7 +43,7 @@ pop-gtk-theme (3.0.1) artful; urgency=medium
 
 pop-gtk-theme (3.0.0) artful; urgency=medium
 
-  * Correct bug with Close buttons in shell. 
+  * Correct bug with Close buttons in shell.
   * Fix Geary embeded composer recipient label.
   * Close buttons are now identically sized.
   * Re-structure of the entire theme
@@ -236,13 +242,13 @@ pop-gtk-theme (2.1.0.0) artful; urgency=medium
   * Added styling for Panthon Photos, Plank, and other elementary apps/widgets.
   * GDM Theming.
   * Fixed a bug that made syslog fill with GNOME Shell errors.
-  * Several typo fixes. 
+  * Several typo fixes.
   * Fixes for some clipped buttons in 17.10.
 
  -- Ian Santopietro <ian@system76.com>  Thu, 31 Aug 2017 11:08:02 -0600
 
 pop-gtk-theme (2.0.6.4) zesty; urgency=medium
- 
+
   * Use brown instead of blue for login dialog background
 
  -- Ian Santopietro <ian@system76.com>  Wed, 23 Aug 2017 11:24:47 -0600
@@ -504,7 +510,7 @@ pop-gtk-theme (1.1.1) zesty; urgency=medium
 pop-gtk-theme (1.1.0) zesty; urgency=medium
 
   * Color names refactored throughout the whole theme
-  * Subtle changes in colors to warm up the theme 
+  * Subtle changes in colors to warm up the theme
 
  -- Ian Santopietro <ian@system76.com>  Tue, 02 May 2017 21:19:58 -0600
 

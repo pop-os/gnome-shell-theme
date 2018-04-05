@@ -6,6 +6,7 @@ src/gtk-2.0/**/assets/*.png
 debian/tmp
 
 # Build artefacts
+build
 src/gtk-2.0/assets-dark.svg
 src/gtk-2.0/assets.svg
 src/gtk-2.0/gtkrc
