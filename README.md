@@ -4,41 +4,24 @@
 
 -------------------
 
-An adaptive Gtk+ theme based on the Materia GTK+ theme.
+## The Pop GNOME Shell theme. 
 
-
-## Screenshots
--------------------
-![Pop GTK+ Theme](screenshots/main.png) ![GNOME Maps](screenshots/pop-maps.png) ![Dark Theme](screenshots/pop-builder.png)
+This is the GNOME Shell theme that goes along with the [Pop GTK Theme](https://github.com/pop-os/gtk-theme).
+It's built and managed separately so that changes in one don't necessarily
+require building unrelated components. This also allows cleaner builds and 
+easier maintenance.
 
 
 ### Required Components
 -------------------
-Pop supports Gtk+ 3.22.x, 3.20.x and 3.18.x
-
- ```
- * Gtk+-3.0             >= 3.18.9
- * Gtk+-2.0             >= 2.24.30
- * gtk2-engines-pixbuf  >= 2.24.30
- * gtk2-engines-murrine >= 0.98.1
- ```
-
-#### Supported Desktop Environments
-------------------------------
-
- ```
- * GNOME-Shell     >= 3.18.3
- * GNOME-Flashback >= 3.18.2
- * Budgie-Desktop  >= 10.2.7
- * Unity7          >= 7.4.0
- * XFce4           >= 4.12.2
- * Mate            >= 1.14.0 (Gtk+ 3.2x only)
- * LXDE            >= 0.99.1 (Gtk+ 2.x only)
+Pop GNOME Shell supports GNOME 3.18, 3.24, 3.26, and 3.28 
+* GNOME-Shell     >= 3.18.3
+* Pop GTK Theme*
  ```
 
  > **Note:**
  >
- >   * Mate-Desktop and Pantheon support are W.I.P.
+ >   * Pop GTK Theme isn't necessarily a requirement, but it is required to select the theme in tweak tool.
 
 
 
@@ -57,16 +40,11 @@ Pop supports Gtk+ 3.22.x, 3.20.x and 3.18.x
 
 ### Installation
 
-Pop is intended to be installed through the package manager. Packages for Ubuntu are available in PPA:
+Pop is intended to be installed through your distribution package manager. 
 ```
-sudo add-apt-repository ppa:system76/pop
-sudo apt update
-sudo apt install pop-theme
+sudo apt install pop-gnome-shell-theme
 ```
-It's recommended to use the `pop-theme` metapackage, as this will pull in all components of the look. However, individual components can be installed separately, e.g:
-```
-sudo apt install pop-gtk-theme
-```
+
 It's also recommended to restart the GNOME Shell after applying the theme of your choice.
 
 Enter the Shell's command launcher
@@ -84,11 +62,7 @@ r
 ### Installation from Git Source
 ----------------------------
 
-###### Note: You must have sassc installed in order to build Pop. Users of 17.04 or later can install it using:
 
-```
-sudo apt install libsass0 sassc inkscape optipng libglib2.0-dev-bin
-```
 
 1. If previous versions were installed/existed, remove them first.
 
@@ -100,24 +74,31 @@ sudo apt install libsass0 sassc inkscape optipng libglib2.0-dev-bin
  rm -rf ~/.themes/{Pop,Pop-Eta,Pop-Nokto,Pop-Nokto-Eta}
  ```
 
-2. Generate the theme files.
+2. Install build dependencies
+
+You can either try 
+```
+sudo apt build-dep pop-gnome-shell-theme
+```
+
+Or, use this to install all dependencies in one go:
+```
+sudo apt install libsass0 sassc inkscape optipng libglib2.0-dev-bin
+```
+
+3. Generate the theme files.
 
 ```
 make clean
 make
 ```
 
-3. Install the theme.
+4. Install the theme.
 
 ```
 sudo make install
 ```
 
-
-
-TODO
-----
-* Prepare for Steam theming (priority: Low)
 
 Public License
 --------------
