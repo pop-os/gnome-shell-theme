@@ -1,0 +1,64 @@
+/* Popovers/Menus */
+.popup-menu {
+  min-width: 15em; }
+  .popup-menu .popup-sub-menu {
+    background-color: #343a3a;
+    box-shadow: inset 0 -1px 0px #282c2c; }
+  .popup-menu .popup-menu-content {
+    padding: 1em 0em; }
+  .popup-menu .popup-menu-item {
+    spacing: 12px; }
+    .popup-menu .popup-menu-item:ltr {
+      padding: .4em 1.75em .4em 0em; }
+    .popup-menu .popup-menu-item:rtl {
+      padding: .4em 0em .4em 1.75em; }
+    .popup-menu .popup-menu-item:checked {
+      background-color: #343a3a;
+      box-shadow: inset 0 1px 0px #282c2c;
+      font-weight: bold; }
+    .popup-menu .popup-menu-item.selected {
+      background-color: rgba(238, 238, 236, 0.1);
+      color: #eeeeec; }
+    .popup-menu .popup-menu-item:active {
+      background-color: #215d9c;
+      color: #ffffff; }
+    .popup-menu .popup-menu-item:insensitive {
+      color: rgba(238, 238, 236, 0.5); }
+  .popup-menu .popup-inactive-menu-item {
+    color: #eeeeec; }
+    .popup-menu .popup-inactive-menu-item:insensitive {
+      color: rgba(238, 238, 236, 0.5); }
+  .popup-menu.panel-menu {
+    -boxpointer-gap: 4px;
+    margin-bottom: 1.75em; }
+
+.popup-menu-ornament {
+  text-align: right;
+  width: 1.2em; }
+
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 3px;
+  -arrow-background-color: #393f3f;
+  -arrow-border-width: 1px;
+  -arrow-border-color: #1c1f1f;
+  -arrow-base: 24px;
+  -arrow-rise: 11px;
+  -arrow-box-shadow: 0 1px 3px black; }
+
+.popup-separator-menu-item {
+  height: 1px;
+  margin: 6px 64px;
+  background-color: transparent;
+  border-color: #343a3a;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+.background-menu {
+  -boxpointer-gap: 4px;
+  -arrow-rise: 0px; }
+
+/* fallback menu
+- odd thing for styling App menu when apparently not running under shell. Light Adwaita styled
+  app menu inside the main app window itself rather than the top bar
+*/

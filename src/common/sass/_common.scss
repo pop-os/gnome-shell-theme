@@ -4,11 +4,10 @@
 $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
 /* #{$cakeisalie} */
 
-/* Copyright 2009, 2015 Red Hat, Inc.
- *
- * Portions adapted from Mx's data/style/default.css
- *   Copyright 2009 Intel Corporation
- *
+/* Copyright 2018 System76, Inc.
+ * Portions adapted from the Adwaita GNOME Shell stylesheet.
+ *   Copyright 2009, 2015 Red Hat, Inc.
+ * 
  * This program is free software; you can redistribute it and/or modify it
  * under the terms and conditions of the GNU Lesser General Public License,
  * version 2.1, as published by the Free Software Foundation.
@@ -39,21 +38,31 @@ stage {
 /* WIDGETS */
 
 @import 'widgets/buttons';
-@import 'widgets/checkbox';
 @import 'widgets/entries';
-@import 'widgets/ibuspopup';
-@import 'widgets/lockscreen';
-@import 'widgets/loginscreen';
-@import 'widgets/lookingglass';
-@import 'widgets/menu-popover';
-@import 'widgets/misc';
-@import 'widgets/modal';
-@import 'widgets/osd';
-@import 'widgets/overview';
 @import 'widgets/scrollbars';
-@import 'widgets/slider';
+@import 'widgets/sliders';
+@import 'widgets/checkboxes';
 @import 'widgets/switches';
-@import 'widgets/topbar';
-@import 'widgets/virtkeyboard';
+@import 'widgets/links';
+@import 'widgets/modal-dialogs';
+@import 'widgets/popovers-menus';
+@import 'widgets/osd';
+@import 'widgets/app-switcher';
+@import 'widgets/workspace-switcher';
+@import 'widgets/window-previews';
+@import 'widgets/panel';
+@import 'widgets/calendar';
+@import 'widgets/message-list';
+@import 'widgets/app-menu';
+@import 'widgets/ripple';
+@import 'widgets/close-button';
+@import 'widgets/network-dialogs';
+@import 'widgets/activities';
+@import 'widgets/dashboard';
+@import 'widgets/app-grid';
 @import 'widgets/notifications';
-
+@import 'widgets/misc';
+@import 'widgets/virtual-keyboard';
+@import 'widgets/auth-dialogs';
+@import 'widgets/screen-shield';
+@import 'widgets/looking-glass';

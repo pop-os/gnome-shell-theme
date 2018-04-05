@@ -1,0 +1,17 @@
+/* Check Boxes */
+.check-box StBoxLayout {
+  spacing: .8em; }
+
+.check-box StBin {
+  width: 24px;
+  height: 22px;
+  background-image: url("resource:///org/gnome/shell/theme/checkbox-off.svg"); }
+
+.check-box:focus StBin {
+  background-image: url("resource:///org/gnome/shell/theme/checkbox-off-focused.svg"); }
+
+.check-box:checked StBin {
+  background-image: url("resource:///org/gnome/shell/theme/checkbox.svg"); }
+
+.check-box:focus:checked StBin {
+  background-image: url("resource:///org/gnome/shell/theme/checkbox-focused.svg"); }

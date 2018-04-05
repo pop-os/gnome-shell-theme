@@ -1,0 +1,45 @@
+/* App Switcher */
+.switcher-popup {
+  padding: 8px;
+  spacing: 16px; }
+
+.switcher-list-item-container {
+  spacing: 8px; }
+
+.switcher-list .item-box {
+  padding: 8px;
+  border-radius: 4px; }
+
+.switcher-list .item-box:outlined {
+  padding: 6px;
+  border: 2px solid #040404; }
+
+.switcher-list .item-box:selected {
+  background-color: #215d9c;
+  color: #ffffff; }
+
+.switcher-list .thumbnail-box {
+  padding: 2px;
+  spacing: 4px; }
+
+.switcher-list .thumbnail {
+  width: 256px; }
+
+.switcher-list .separator {
+  width: 1px;
+  background: #1c1f1f; }
+
+.switcher-arrow {
+  border-color: transparent;
+  color: rgba(238, 238, 236, 0.8); }
+  .switcher-arrow:highlighted {
+    color: #eeeeec; }
+
+.input-source-switcher-symbol {
+  font-size: 34pt;
+  width: 96px;
+  height: 96px; }
+
+/* Window Cycler */
+.cycler-highlight {
+  border: 5px solid #215d9c; }
