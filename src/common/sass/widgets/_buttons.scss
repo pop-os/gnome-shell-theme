@@ -1,9 +1,9 @@
 /* Buttons */
 .button {
-  min-height: $medium_size;
-  padding: 0 16px;
+  min-height: $button_size;
+  padding: 0 $large_padding;
   border-width: 0;
-  border-radius: 2px;
+  border-radius: $pop_radius;
   @include font(button);
   @include button(flat-normal);
   &:hover { @include button(flat-hover); }
@@ -14,9 +14,9 @@
 }
 
 .modal-dialog-linked-button {
-  min-height: 40px;
-  padding: 0 16px;
-  border-top: 1px solid $border_color !important;
+  min-height: $button_size * 2;
+  padding: 0 $large_padding;
+  border-top: $border_size solid $border_color !important;
   border-right-width: 0;
   @include font(button);
   @include button(flat-normal);
@@ -26,14 +26,14 @@
   &:focus { @include button(flat-focus); }
 
   &:first-child {
-    border-radius: 0px 0px 0px 2px;
+    border-radius: 0 0 0 $pop_radius;
   }
   &:last-child {
-    border-right-width: 0px;
-    border-radius: 0px 0px 2px 0px;
+    border-right-width: 0;
+    border-radius: 0 0 $pop_radius 0;
   }
   &:first-child:last-child {
-    border-right-width: 0px;
-    border-radius: 0px 0px 2px 2px;
+    border-right-width: 0;
+    border-radius: 0 0 $pop_radius $pop_radius;
   }
 }
