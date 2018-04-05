@@ -54,8 +54,8 @@
 .world-clocks-button:active,
 .weather-button:active,
 .events-section-title:active {
-  color: white;
-  background-color: #215d9c; }
+  color: $fg_color;
+  background-color: $bg_color; }
 
 .datemenu-today-button .date-label {
   font-size: 1.5em;

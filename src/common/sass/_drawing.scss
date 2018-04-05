@@ -156,7 +156,7 @@
 
   @if $type == insensitive {
     color: if($text_color == $fg_color, $disabled_secondary_fg_color, $text_color);
-    background-color: if($base_color:== $base_color, $divider_color, $base_color);
+    background-color: if($base_color == $base_color, $divider_color, $base_color);
     border-color: transparent;
     box-shadow: $shadow_0;
     text-shadow: none;

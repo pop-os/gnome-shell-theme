@@ -1,7 +1,7 @@
 SHELL = /bin/bash
 COLOR_VARIANTS = '' '-dark' '-light'
 SIZE_VARIANTS = '' '-slim'
-VERSIONS = '3.18' '3.24' '3.26' '3.28'
+VERSIONS = '3.18' '3.26' '3.28'
 SASSC_OPT=-M -t expanded
 BASE_DIR=/usr/share/themes
 REPODIR=$(CURDIR)

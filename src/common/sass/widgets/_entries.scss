@@ -3,10 +3,9 @@
  ***********/
 
 StEntry {
-  border-radius: $pop_radius;
+  border-radius: $pop_radius $pop_radius 0 0;
   padding: 0 $small_padding;
   border-width: 0;
-  border-radius: $pop_radius;
   selection-background-color: $primary_color;
   selected-color: $white;
   @include entry(normal);

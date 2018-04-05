@@ -2,6 +2,13 @@
  * Pop!_GNOME+ Version 4.0.0 *
  ***************************/
  
+// Fonts
+$font-family: Fira Sans, Cantarell, Sans-Serif;
+$large-font-family: Fira Sans, "M+ 1c", Cantarell, Sans-Serif;
+$root-font-size: if($compact == 'false', 14px, 13px);
+$subheading-size: if($compact == 'false', 16px, 15px);
+
+ 
 // Base-sizes
 $mini_size: if($compact == 'false',4px, 2px);
 $tiny_size: if($compact == 'false', 12px, 10px);
@@ -11,43 +18,31 @@ $large_size: if($compact == 'false', 32px, 28px);
 
 // Widgets - Define widget sizes here, and 
 // define custom sizes as derivative of these
-$border_size: 1px;
 $button_size: $medium_size;
-$check_size: $small_size - 4px;
-$titlebar_size: $medium_size;
-$entry_size: $medium_size;
-$sidebar_placeholder_size: 4px;
-$separator_size: 1px;
-$headerbar-size: 40px;
-$headerbar_button_size: if($compact == 'false', 8px, 6px);
-$close_button_size: $small_size;
-$bar_size: 4px;
 $menuitem_size: $small_size;
-$shortcut_key_size: $medium_size;
-$scale_trough_size: $bar_size;
-$scale_slider_size: $tiny_size;
-$scale_marks_size: 6px;
+$border_size: 1px;
 $scrollbar_size: 14px;
-$switch_size: $small_size + 4;
+$popup_size: 15em;
 
 // Padding
-$no_padding: 1px;
-$mini_padding: 2px;
-$tiny_padding: if($compact == 'false', 6px, 4px);
-$small_padding: if($compact == 'false', 8px, 6px);
-$standard_padding: if($compact == 'false', 12px, 10px);
-$large_padding: if($compact == 'false', 16px, 12px);
+$no_padding: .1em;
+$mini_padding: .2em;
+$tiny_padding: if($compact == 'false', .6em, .4em);
+$small_padding: if($compact == 'false', .8em, .6em);
+$standard_padding: if($compact == 'false', 1.2em, 1.0em);
+$large_padding: if($compact == 'false', 1.6em, 1.2em);
 
 // Widget paddings - Try to use Sparingly.
-$container_padding: 6px;
-$image_button_padding: if($compact == 'false', 4px, 2px);
-$menu_padding: if($compact == 'false', 4px, 2px);
+$container_padding: .6em;
+$image_button_padding: if($compact == 'false', .4em, .2em);
+$menu_padding: if($compact == 'false', .4em, .2em);
 
 
 // Radii and other curves
 $pop_radius: 4px;
 $shortcut_key_radius: 3px;
 $circular_radius: 9999px;
+$panel_corner_radius: 4px;
 
 
 
