@@ -5,87 +5,57 @@
 - To change the SVG assets color, use the recoloring script, and do not edit the
   svg.in files.
 
-## How to tweak the theme
+## The theme build process
 
-Like the upstream Adwaita, this theme is written and processed in Sass.
+Pop GNOME Shell theme is created using SCSS source code which is 
+programmatically compiled into usable CSS for the theme. If you modify the CSS
+files, your changes will be overwritten when you run `make`. Instead, edit the
+SCSS files. 
 
-You can read about Sass at http://sass-lang.com/documentation/. Once you make
-your changes to the SCSS files, run the `./parse-sass.sh` script to rebuild the
-CSS files.
+The SCSS is broken into sections to make modification easier. The main files in
+the `src/common` directory are the main files, and should not be edited by hand.
+The editable source files are in `src/common/sass`. 
 
-Here's a rundown of the _supporting_ stylesheets:
+If a specific version of the theme requires differences from what the main theme
+carries, then those should be placed in the `src` directory under a subdirectory
+with the name of the version. The latest version of GNOME supported should not
+have any overrides; the `common` folder should build a correct theme for the 
+current latest version. 
 
-- `_variables.scss`
+A basic directory layout is below:
 
-  variables to allow easier definition of widget sizing/styling.
+```
+src/
+    common/ - The main theme files
+           assets/ - SVG images for use in the theme (light versions)
+           assets-dark/ - SVG images for use in the theme (dark versions)
+           extensions/ - Theming for extensions that require their own stylesheets
+           sass/ - Main theme source code
+                widgets/ - Theme source for individual widgets in the shell
+                _color-palette.scss - The color palette used in the theme
+                _colors.scss - Actual color definitions
+                _common.scss - The master source file, which includes other files
+                _drawing.scss - code for drawing specific widgets
+                _extensions.scss - overrides for specific extensions
+                _variables.scss - Reusable variables
+           gnome-shell(*).scss - The files which are generated into CSS.
+    3.18/ - Overrides for GNOME 3.18
+    3.24/ - Overrides for GNOME 3.24
+    ...
+```
 
-- `_color-palette.scss`
+When the theme is built, first a copy of the common folder is generated for each
+version of the theme. Then, the override directory is overlaid on top of that, 
+replacing parts that require changes from the main theme. This ensures that old
+versions can be supported with minimal overhead without relaying on large 
+networks of symlinks.
 
-  Color Palette definitions. This is where the base colors for the theme are
-  defined, as well as any special overrides.
+## Adding new GNOME versions
 
-- `_colors.scss`
-
-  global color definitions. We keep the number of defined colors to a necessary
-  minimum. It covers both the light variant and the dark variant.
-
-- `_colors-public.scss`
-
-  SCSS colors exported through gtk to allow for 3rd party apps color mixing.
-
-- `_drawing.scss`
-
-  drawing helper mixings/functions to allow easier definition of widget drawing
-  under specific context.
-
-- `_common.scss`
-
-  actual definitions of style for each widget. This is where you are likely to
-  add/remove your changes.
-
-- `_apps.scss` or `_extensions.scss`
-
-  app/extension specific stylings.
-
-## How to change the assets
-
-The svg.in source files are converted to SVG by the `recolor-assets.sh` script,
-and then are rendered out to PNG files when the theme is built from
-source. You can manually trigger a rebuild by using the `make assets` command. 
-This will cause inkscape to render out all of the PNG files, which will 
-overwrite any existing files. 
-
-Before rendering or building, all assets are color matched according to the 
-`recolor-assets.sh` script. If you want to change the colors of the assets, that
-is the correct place to do it. It's also good for basic stlye changes, like 
-changing the border radius. 
-
-There is a recolor script for Gtk3, Gtk2, and xfwm. You'll need to edit all 
-three (or at least all of them you want to be updated). This is planned to be 
-consolidated in the near future.
-
-If you want to modify the look/style of the assets, you can open them in 
-inkscape or another vector graphics editor and modify them there. You may need 
-to remove the `.in` extension from the end of the filename first. Be sure that 
-you don't modify any `.svg` files or save your modifications as `.svg` without
-adding the `.in` extension, as these files will be deleted when you rebuild the 
-theme.
-
-## Useful Links
-
-#### Upstream theme sources
-
-- [GTK+ 4.0](https://github.com/GNOME/gtk/tree/master/gtk/theme/Adwaita)
-  - [3.22](https://github.com/GNOME/gtk/tree/gtk-3-22/gtk/theme/Adwaita)
-  - [3.20](https://github.com/GNOME/gtk/tree/gtk-3-20/gtk/theme/Adwaita)
-  - [3.18](https://github.com/GNOME/gtk/tree/gtk-3-18/gtk/theme/Adwaita)
-- [GTK+ 2](https://github.com/GNOME/gnome-themes-standard/tree/master/themes/Adwaita/gtk-2.0)
-- [GNOME Shell](https://github.com/GNOME/gnome-shell/tree/master/data/theme)
-  - [Sass sources](https://github.com/GNOME/gnome-shell-sass)
-
-#### Tips
-
-- [Unity/Theming](https://wiki.ubuntu.com/Unity/Theming)
-- [Material Design Guidelines](https://www.material.io/guidelines/)
-- [Personal CSS Guidelines](https://github.com/nana-4/materia-theme/wiki/CSS-Guidelines)
-- [The GTK+ Inspector](https://blog.gtk.org/2017/04/05/the-gtk-inspector/)
+New GNOME Versions should be specified in the Makefile. You will also need to 
+create a folder for the new version (if one doesn't exist) and place the changes
+required to make the theme work there. If the version is newer than the current
+newest supported version, back up the common folder into the current newest 
+version's override folder, then modify the files in `common` as required. Delete
+the files without changes from the older version (to save space), then add the 
+new version to the `Makefile`.

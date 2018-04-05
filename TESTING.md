@@ -13,63 +13,12 @@ be moved from one repository to the next.
 
 ## Part 2: Proposed -> Stable
 
-Things to look at:
- - [gtk3-widget-factory](#gtk)
- - [Nautilus](#nautilus)
- - [Gnome shell](#shell)
- - [Gnome-Tweak-Tool](#gtt)
- 
- **Things to check in gtk3-widget-factory**<a name="gtk"></a>
- 
- Make sure different items are colored properly such as detailed below:
- 
- *Blue:*
- - Selected/highlighted content
- - variable controls - progress bars, scales, level bars
- - General Content-relevant controls
- 
- *Orange:*
- - Binary on/off actions
- - radio buttons
- - active buttons
- - toggle switches
- - checkboxes
- - switches
- - Pathbars
- - General context-display controls
-  
- *Green:*
- - Save buttons once they can be clicked
- - Affirmative/progressive action buttons/controls
- 
- *Header and title bars:* 
- - brown in normal theme
- - dark theme - darker brown
- - light theme - grey
- 
- *Window Backgrounds:*
- - light grey/white background in normal theme
- - dark brown in dark theme
- 
- - progress spinner should invert colors in dark theme
- 
- **Check that Nautilus has the proper color**<a name="nautilus"></a>
- - context information (sidebar entries)
- - tabs have orange underlines, path bars
-
- **Gnome shell**<a name="shell"></a>
+**Gnome shell**<a name="shell"></a>
  - orange underline/straightlines everywhere
  - calendar - selected day is orange - days with events are blue
  - volume slider should be blue
  - active popup menu - orange
  - wifi selection is blue
- 
-**Gnome-Tweak-Tool**<a name="gtt"></a>
- 
- *6 themes:*
-  - Pop{,-slim}
-  - Pop-Dark{,-slim}
-  - Pop-Light{,-slim}
  
  **Other things to note:**
  
