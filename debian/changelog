@@ -1,0 +1,574 @@
+pop-gtk-theme (3.1.1) bionic; urgency=medium
+
+  * Embedded Terminal styling
+  * Indented GNOME Shell submenus
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 03 Apr 2018 11:32:47 -0600
+
+pop-gtk-theme (3.1.0) bionic; urgency=medium
+
+  * Fix black separators on split headerbars
+  * Tweak background colors on light themes
+  * Make the dark theme more neutral
+  * Improve contrast in -light variant
+  * Ensure that titlebar buttons are all the same size
+  * Ensure that round titlebar button are all actually round
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 23 Mar 2018 13:19:58 -0600
+
+pop-gtk-theme (3.0.3) artful; urgency=medium
+
+  * Fix bug with animating Overview. GH:pop-os/gtk-theme#93
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 16 Jan 2018 11:52:04 -0700
+
+pop-gtk-theme (3.0.2) artful; urgency=medium
+
+  * Ensure better headerbar size in -slim. 
+  * Make sure titlebuttons are all round. 
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 16 Jan 2018 11:51:15 -0700
+
+pop-gtk-theme (3.0.1) artful; urgency=medium
+
+  * Make login dialog wider to prevent long names from being cut off.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 19 Dec 2017 11:28:51 -0700
+
+pop-gtk-theme (3.0.0) artful; urgency=medium
+
+  * Correct bug with Close buttons in shell. 
+  * Fix Geary embeded composer recipient label.
+  * Close buttons are now identically sized.
+  * Re-structure of the entire theme
+  * Individual Components now carried in separate, imported scss files
+  * Build system ported (mostly) to native make
+  * Reworked backend and build files for more organized layout and easier modification.
+  * More expansive support for the backdrop style class for background windows.
+  * Red close buttons for enhanced usability.
+  * Contrast Improvements.
+  * Squared-off corners when windows are tiled.
+  * Programmatic generation of expansive color palettes.
+  * Slim theme size and padding reductions.
+  * Better Window margins for easier window resizing.
+  * Removal of headerbar separators for cleaner appearance
+  * Re-worked checkbox and radio button styling to erase some wonky issues.
+  * Re-written scale styling to improve appearance and animations.
+  * Shadow for the panel.
+  * Animation Improvements.
+  * InfoBar button text color is now visible.
+  * Color corrections to various widgets.
+  * Code Cosmetic improvements.
+  * Fix for Harvey titlebar
+  * Improved warning text contrast for Authentication dialogs.
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 18 Dec 2017 17:37:07 -0700
+
+pop-gtk-theme (2.99.4) artful; urgency=medium
+
+  * Correct bug with Close buttons in shell.
+  * Fix Geary embeded composer recipient label.
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 18 Dec 2017 17:36:23 -0700
+
+pop-gtk-theme (2.99.3) artful; urgency=medium
+
+  * Close buttons are now identically sized.
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 11 Dec 2017 10:09:48 -0700
+
+pop-gtk-theme (2.99.2) artful; urgency=medium
+
+  * Re-structure of the entire theme
+  * Individual Components now carried in separate, imported scss files
+  * Build system ported (mostly) to native make
+  * Reworked backend and build files for more organized layout and easier modification.
+  * More expansive support for the backdrop style class for background windows.
+  * Red close buttons for enhanced usability.
+  * Contrast Improvements.
+  * Squared-off corners when windows are tiled.
+  * Programmatic generation of expansive color palettes.
+  * Slim theme size and padding reductions.
+  * Better Window margins for easier window resizing.
+  * Removal of headerbar separators for cleaner appearance
+  * Re-worked checkbox and radio button styling to erase some wonky issues.
+  * Re-written scale styling to improve appearance and animations.
+  * Shadow for the panel.
+  * Animation Improvements.
+  * InfoBar button text color is now visible.
+  * Color corrections to various widgets.
+  * Code Cosmetic improvements.
+  * Fix for Harvey titlebar
+  * Improved warning text contrast for Authentication dialogs.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 07 Dec 2017 14:59:15 -0700
+
+pop-gtk-theme (2.2.3.0) artful; urgency=medium
+
+  * Contrast Improvements.
+  * Make buttons on InfoBars visible.
+  * Tiled windows no longer have rounded corners.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 25 Oct 2017 15:11:45 -0600
+
+pop-gtk-theme (2.2.2.1) artful; urgency=medium
+
+  * Fix inactive titlebars.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 19 Oct 2017 10:44:34 -0600
+
+pop-gtk-theme (2.2.2.0) artful; urgency=medium
+
+  * Titlebars and header bars can now be inactive.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 18 Oct 2017 12:19:52 -0600
+
+pop-gtk-theme (2.2.1.1) artful; urgency=medium
+
+  * Fix color-changing GNOME Shell menu popups.
+  * Fix missing padding in non CSD apps in Wayland.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 18 Oct 2017 11:20:57 -0600
+
+pop-gtk-theme (2.2.1.0) artful; urgency=medium
+
+  * Improve look of GNOME Shell App Folders.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 17 Oct 2017 10:04:28 -0600
+
+pop-gtk-theme (2.2.0.1) artful; urgency=medium
+
+  * Make App Folder backgrounds translucent.
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 16 Oct 2017 17:10:11 -0600
+
+pop-gtk-theme (2.2.0.0) artful; urgency=medium
+
+  * New upstream sync.
+  * Emoji picker support
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 11 Oct 2017 11:43:35 -0600
+
+pop-gtk-theme (2.1.2.0) artful; urgency=medium
+
+  * Internal code cosmetics
+  * Chrome/ium fixes
+  * Removal of outdated styling
+  * Support for headerbar.titlebar
+  * Firefox button text contrast improvements
+  * Fixes for Eye of GNOME
+  * Fixed bug with GNOME Shell builds
+  * Changed App-Wall tile :hover background color
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 10 Oct 2017 11:12:25 -0600
+
+pop-gtk-theme (2.1.1.10) artful; urgency=medium
+
+  * Bump version
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 13 Sep 2017 15:21:05 -0600
+
+pop-gtk-theme (2.1.1.9) artful; urgency=medium
+
+  * Add rule to set gnome-control-center sidebar to orange
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 13 Sep 2017 15:16:29 -0600
+
+pop-gtk-theme (2.1.1.8) artful; urgency=medium
+
+  * Change track_color to slightly darker color
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 12 Sep 2017 16:13:18 -0600
+
+pop-gtk-theme (2.1.1.7) artful; urgency=medium
+
+  * Add alternative for gdm3
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 08 Sep 2017 15:49:57 -0600
+
+pop-gtk-theme (2.1.1.6) artful; urgency=medium
+
+  * pop-gnome-shell-theme no longer replaces gnome-shell-common
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 07 Sep 2017 13:35:22 -0600
+
+pop-gtk-theme (2.1.1.5) artful; urgency=medium
+
+  * Move gnome-shell theme to pop.css
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 07 Sep 2017 13:02:44 -0600
+
+pop-gtk-theme (2.1.1.4) artful; urgency=medium
+
+  * Add assets to gnome-shell theme
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 07 Sep 2017 09:05:49 -0600
+
+pop-gtk-theme (2.1.1.3) artful; urgency=medium
+
+  * Remove gnome-shell mode, to be done in pop-session
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 06 Sep 2017 16:03:14 -0600
+
+pop-gtk-theme (2.1.1.2) artful; urgency=medium
+
+  * Move gnome-shell mode
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 06 Sep 2017 15:32:31 -0600
+
+pop-gtk-theme (2.1.1.1) artful; urgency=medium
+
+  * Add gnome shell mode
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 06 Sep 2017 14:44:59 -0600
+
+pop-gtk-theme (2.1.1.0) artful; urgency=medium
+
+  * Darkened brand colors in dark themes for better usability.
+  * Revised color theory on certain widgets for better appearance.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 31 Aug 2017 14:17:23 -0600
+
+pop-gtk-theme (2.1.0.0) artful; urgency=medium
+
+  * Update for 17.10.
+  * Newly pulled from upstream codebase.
+  * Added styling for Panthon Photos, Plank, and other elementary apps/widgets.
+  * GDM Theming.
+  * Fixed a bug that made syslog fill with GNOME Shell errors.
+  * Several typo fixes. 
+  * Fixes for some clipped buttons in 17.10.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 31 Aug 2017 11:08:02 -0600
+
+pop-gtk-theme (2.0.6.4) zesty; urgency=medium
+ 
+  * Use brown instead of blue for login dialog background
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 23 Aug 2017 11:24:47 -0600
+
+pop-gtk-theme (2.0.6.3) zesty; urgency=medium
+
+  * 'Theme' not 'themes'.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 23 Aug 2017 11:13:05 -0600
+
+pop-gtk-theme (2.0.6.2) zesty; urgency=medium
+
+  * Install a GNOME Shell theme for GDM Themeing.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 23 Aug 2017 10:41:50 -0600
+
+pop-gtk-theme (2.0.6.1) zesty; urgency=medium
+
+  * Fix blue suggested action buttons in headerbars.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 22 Aug 2017 15:13:05 -0600
+
+pop-gtk-theme (2.0.6.0) zesty; urgency=medium
+
+  * Theme Ubiquity.
+  * Ensure combo buttons match their entries.
+  * Linked buttons have rounded corners on the outside.
+  * Shell uses circular user icons.
+  * Red Text for login warnings.
+  * Screen shield notifications.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 22 Aug 2017 09:41:27 -0600
+
+pop-gtk-theme (2.0.5.1) zesty; urgency=medium
+
+  * Add internal version field to check installed version.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 15 Aug 2017 12:57:13 -0600
+
+pop-gtk-theme (2.0.5.0) zesty; urgency=medium
+
+  * Support for a variety of Granite widgets (storage bar, text classes, etc).
+  * Dash background color adjusted to match the panel background.
+  * Fixes for ugly buttons in Chrome/ium. #8
+  * Fixes for Eye of Gnome next/previous button cutoff. #10
+  * Fixes for pixelated dash placeholder. #9
+  * Screenshield notifications now match the desktop counterparts.
+  * Overhauled appearance for Looking Glass.
+  * Contrast improvements for GNOME Shell.
+  * Various copyright notices corrected.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 15 Aug 2017 09:53:20 -0600
+
+pop-gtk-theme (2.0.4.1) zesty; urgency=medium
+
+  * Fix Symbolic link to 3.20 elementary SCSS.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 10 Aug 2017 13:36:42 -0600
+
+pop-gtk-theme (2.0.4.0) zesty; urgency=medium
+
+  * Add support for a limited selection of Granite Widgets.
+  * System Settings battery level is no longer black.
+  * Buttons in the Geary setup are no longer clipped on the bottom.
+  * Fixed Menubar colors in -dark and -light GTK2 variants.
+  * GTK2 and GTK3 widget radius consistency.
+  * Shell and GTK3 widget radius consistency.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 10 Aug 2017 13:26:21 -0600
+
+pop-gtk-theme (2.0.3.0) zesty; urgency=medium
+
+  * Entry Release. Much work focused on varius entry widgets.
+  * Make sure adjacent entries in Evince have no middle radius.
+  * Evince Entries are uniformly sized.
+  * Unfocused entries get lower Z-height
+  * Tweak minimum entry size to avoid clipping final characters.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 08 Aug 2017 15:07:33 -0600
+
+pop-gtk-theme (2.0.2.0) zesty; urgency=medium
+
+  * GtkInfoBar: Increased Contrast and visibility
+  * Better color and style consistency between GTK2 and GTK3
+  * Most Radii are now 4px instead of 2px
+  * Removed dashed line to indicate more content is scrollable
+  * Tweak for color consistency in GTK 3.18
+  * Active System Menu Popups use a lighter-weight font
+  * Active System Menu Popups also have a darker orange
+  * Change Orange Search and Clear icons to white in the Overview
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 07 Aug 2017 15:51:43 -0600
+
+pop-gtk-theme (2.0.1.0) zesty; urgency=medium
+
+  * Improve workspace pager styling.
+  * GTK+ Dialogs now match the Shell dialogs.
+  * Rich Notifications styling.
+  * Fira is now loaded first in Shell.
+  * Shell corner radius is now 4 pixels instead of 2.
+  * Improved the shadows for the workspace/applications switers.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 04 Aug 2017 14:32:15 -0600
+
+pop-gtk-theme (2.0.0.0) zesty; urgency=medium
+
+  * New release based on Flat-Plat instead of Adapta.
+  * Reduced Memory Usage.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 03 Aug 2017 11:52:45 -0600
+
+pop-gtk-theme (1.99.1.0) zesty; urgency=medium
+
+  * Tweaks to GNOME Shell theme for better Pop look and feel.
+  * GTK2 theme.
+  * Consistency fixes for some GTK3 assets.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 02 Aug 2017 16:43:16 -0600
+
+pop-gtk-theme (1.99.0.0) zesty; urgency=medium
+
+  * Recreate the entire theme with a new upstream based on Flat-Plat.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 02 Aug 2017 11:57:01 -0600
+
+pop-gtk-theme (1.3.1.13) zesty; urgency=medium
+
+  * Merge in changes from upstream.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 27 Jun 2017 09:32:10 -0600
+
+pop-gtk-theme (1.3.1.12) zesty; urgency=medium
+
+  * Use White instead of Foreground Color for Ubiquity.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 23 Jun 2017 13:21:06 -0600
+
+pop-gtk-theme (1.3.1.11) zesty; urgency=medium
+
+  * Merge in lastest upstream.
+  * Correct Ubiquity invisible text issue.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 23 Jun 2017 11:53:06 -0600
+
+pop-gtk-theme (1.3.1.10) zesty; urgency=medium
+
+  * Lighten GNOME Shell Panel color.
+  * Mirror GNOME Shell panel color change in GTK-based panels.
+  * Fix blue-inderline bug in GNOME Weather.
+  * Ensure Firefox styling is correct.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 23 Jun 2017 10:13:03 -0600
+
+pop-gtk-theme (1.3.1.9) zesty; urgency=medium
+
+  * 3rd Party: Re-apply panel-grid for MATE taskbar.
+  * Shell: Make days with events blue in calendar popover
+  * Maintenance: Merge from upstream
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 21 Jun 2017 11:14:54 -0600
+
+pop-gtk-theme (1.3.1.8) zesty; urgency=medium
+
+  * Update conflicts
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 20 Jun 2017 09:31:37 -0600
+
+pop-gtk-theme (1.3.1.7) zesty; urgency=medium
+
+  * Rename to pop-gtk-theme
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 19 Jun 2017 11:34:06 -0600
+
+pop-gtk-theme (1.3.1.6) zesty; urgency=medium
+
+  * Ubiquity: Make page title text white so that it is readable.
+  * Ubiquity: Turn progress dots into circles.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 16 Jun 2017 13:17:58 -0600
+
+pop-gtk-theme (1.3.1.5) zesty; urgency=medium
+
+  * Fix issue with invisible flat text buttons.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 16 Jun 2017 11:01:36 -0600
+
+pop-gtk-theme (1.3.1.4) zesty; urgency=medium
+
+  * Darken GDM/GNOME Shell background color.
+  * Pull in changes from upstream Adapta.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 16 Jun 2017 09:39:36 -0600
+
+pop-gtk-theme (1.3.1.3) zesty; urgency=medium
+
+  * Make dialog buttons white instead of blue to improve reability.
+  * Disable building of theme for 16.04
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 13 Jun 2017 14:36:12 -0600
+
+pop-gtk-theme (1.3.1.2) zesty; urgency=medium
+
+  * Adjust LightDM GTK Greeter styling.
+  * Pull in latest changes from upstream Adapta.
+  * Tweak Firefox Button styling.
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 05 Jun 2017 14:37:52 -0600
+
+pop-gtk-theme (1.3.1.1) zesty; urgency=medium
+
+  * Fix Dark theme.
+  * Fix Metathemes.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 02 Jun 2017 14:33:32 -0600
+
+pop-gtk-theme (1.3.1.0) zesty; urgency=medium
+
+  * Merge upstream Adapta.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 02 Jun 2017 11:21:31 -0600
+
+pop-gtk-theme (1.3.0.1) zesty; urgency=medium
+
+  * Fix errant GtkSwitch widget coloring.
+  * Correct build error with new gnome-shell build-dep.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 31 May 2017 09:01:35 -0600
+
+pop-gtk-theme (1.3.0) zesty; urgency=medium
+
+  * Fix building from upstream Adapta.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 30 May 2017 14:50:20 -0600
+
+pop-gtk-theme (1.2.2) zesty; urgency=medium
+
+  * Fix color migration problems from rebase.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 24 May 2017 16:22:58 -0600
+
+pop-gtk-theme (1.2.1) zesty; urgency=medium
+
+  * Re-write theme in more upstream-friendly way.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 17 May 2017 16:38:44 -0600
+
+pop-gtk-theme (1.2.0) zesty; urgency=medium
+
+  * Merge in upstream Adapta.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 04 May 2017 17:34:23 -0600
+
+pop-gtk-theme (1.1.1) zesty; urgency=medium
+
+  * Darken Terminal Background.
+
+ -- Ian Santopietro <ian@system76.com>  Wed, 03 May 2017 17:21:04 -0600
+
+pop-gtk-theme (1.1.0) zesty; urgency=medium
+
+  * Color names refactored throughout the whole theme
+  * Subtle changes in colors to warm up the theme 
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 02 May 2017 21:19:58 -0600
+
+pop-gtk-theme (1.0.10) zesty; urgency=medium
+
+  * Fix backwards initial color definitions
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 01 May 2017 16:01:03 -0600
+
+pop-gtk-theme (1.0.9) zesty; urgency=medium
+
+  * Refactor most colors in the theme to easier-to-understand components
+  * Improve consistency between plans and implelentation
+  * Increase most border radii to lighten up and humanize the theme
+
+ -- Ian Santopietro <ian@system76.com>  Mon, 01 May 2017 14:23:11 -0600
+
+pop-gtk-theme (1.0.8) zesty; urgency=medium
+
+  * GTK 2 Tweaks
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 27 Apr 2017 17:57:41 -0600
+
+pop-gtk-theme (1.0.7) zesty; urgency=medium
+
+  * Attempt to tweak color for "OFF" switches.
+  * Add slightly rounded top border
+  * Darken GtkEntry widgets to improve visibility.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 27 Apr 2017 15:29:08 -0600
+
+pop-gtk-theme (1.0.6) zesty; urgency=medium
+
+  * Remove half-tiled effect on headerbars
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 27 Apr 2017 09:17:29 -0600
+
+pop-gtk-theme (1.0.5) zesty; urgency=medium
+
+  * Don't build unecessary extras
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 21 Apr 2017 17:20:10 -0600
+
+pop-gtk-theme (1.0.4) zesty; urgency=medium
+
+  * Fix build bug with Extras support
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 21 Apr 2017 16:58:03 -0600
+
+pop-gtk-theme (1.0.3) zesty; urgency=medium
+
+  * Disable building Nokto variants by default
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 21 Apr 2017 16:14:26 -0600
+
+pop-gtk-theme (1.0.1) zesty; urgency=medium
+
+  * Move to gnome section
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 21 Apr 2017 13:52:13 -0600
+
+pop-gtk-theme (1.0.0) zesty; urgency=medium
+
+  * First release
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 20 Apr 2017 11:07:01 -0600
+
