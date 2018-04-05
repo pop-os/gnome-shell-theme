@@ -91,8 +91,7 @@ gnome-shell:
 
 	for color in $(COLOR_VARIANTS); do \
 	  for size in $(SIZE_VARIANTS); do \
-	    # Skip gnome-shell 3.20 and 3.22 \
-	    for version in '3.18' '3.24' '3.26' '3.28'; do \
+	    for version in $(VERSIONS); do \
 	      sassc $(SASSC_OPT) build/$$version/gnome-shell$$color$$size.{scss,css}; \
 	      sassc $(SASSC_OPT) build/$$version/extensions/workspaces-to-dock/workspaces-to-dock.{scss,css}; \
 	      sassc $(SASSC_OPT) build/$$version/pad-osd.{scss,css}; \
