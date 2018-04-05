@@ -1,6 +1,7 @@
 SHELL = /bin/bash
 COLOR_VARIANTS = '' '-dark' '-light'
 SIZE_VARIANTS = '' '-slim'
+VERSIONS = '3.18' '3.24' '3.26' '3.28'
 SASSC_OPT=-M -t expanded
 BASE_DIR=/usr/share/themes
 REPODIR=$(CURDIR)
@@ -81,7 +82,9 @@ gnome-shell:
 	@echo "** Generating GNOME Shell..."
 
 	-mkdir -p build
-	for version in '3.18' '3.24' '3.26' '3.28'; do \
+
+	for version in $(VERSIONS); do \
+	  mkdir -p src/$$version; \
 	  cp -r src/common/ build/$$version; \
 	  cp -r src/$$version/ build/; \
 	done
