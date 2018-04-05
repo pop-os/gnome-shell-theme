@@ -6,6 +6,7 @@ BASE_DIR=/usr/share/themes
 REPODIR=$(CURDIR)
 SRCDIR=$(REPODIR)/build
 GNOMEVER=3.26
+DEBIAN=0
 
 all: gnome-shell
 
@@ -15,15 +16,14 @@ clean:
 	-rm -rf build
 
 uninstall:
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-dark
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-light
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-compact
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-light-compact
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-dark-compact
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-slim
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-dark-slim
-	-rm -rf $(DESTDIR)/usr/share/themes/Pop-light-slim
+	for color in $(COLOR_VARIANTS); do \
+	  for size in $(SIZE_VARIANTS); do \
+	    rm -rf /usr/share/themes/Pop$$color$$size/gnome-shell \
+	           /usr/local/share/themesPop$$color$$size/gnome-shell; \
+	  done; \
+	done
+
+	-rm -rf /usr/share/gnome-shell/theme/pop.css
 
 install:
 	@echo "** Installing the theme..."
@@ -63,7 +63,10 @@ install:
 	  done; \
 	done
 
-	cp -v /usr/share/themes/Pop/gnome-shell/pop.css /usr/share/gnome-shell/theme
+	install -D $(DESTDIR)/usr/share/themes/Pop/gnome-shell/pop.css \
+	           $(DESTDIR)/usr/share/gnome-shell/theme/pop.css
+	cp -r $(DESTDIR)/usr/share/themes/Pop/gnome-shell/assets \
+	      $(DESTDIR)/usr/share/gnome-shell/theme/
 
 recolor:
 	@echo "** Matching Colors"

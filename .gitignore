@@ -13,3 +13,10 @@ src/gtk-2.0/gtkrc
 src/gtk-2.0/gtkrc-dark
 src/gtk-2.0/gtkrc-light
 src/gtk-3.0/gtk-common/assets.svg
+
+# Debian artefacts
+debian/.debhelper/
+debian/files
+debian/pop-gnome-shell-theme.debhelper.log
+debian/pop-gnome-shell-theme.substvars
+debian/pop-gnome-shell-theme/
