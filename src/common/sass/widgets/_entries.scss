@@ -1,10 +1,10 @@
-/***********
+/*
  * Entries *
- ***********/
+ */
 
 StEntry {
   border-radius: $pop_radius $pop_radius 0 0;
-  padding: 0 $small_padding;
+  padding: $tiny_padding $standard_padding;
   border-width: 0;
   selection-background-color: $primary_color;
   selected-color: $white;

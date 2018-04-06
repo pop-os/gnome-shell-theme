@@ -1,4 +1,6 @@
-/* Overview */
+/*
+ * Overview *
+ */
 
 #overview {
   spacing: $standard_padding * 2;
@@ -17,73 +19,81 @@
 }
 
 .window-clone-border {
-  border: 4px solid #215d9c;
-  border-radius: 4px;
-  box-shadow: inset 0px 0px 0px 1px #215d9c; }
+  border: $border_size*2 solid $primary_color;
+  border-radius: $pop_radius;
+}
 
 .window-caption {
-  spacing: 25px;
-  color: #ffffff;
-  background-color: #215d9c;
-  border-radius: 8px;
-  padding: 4px 12px; }
+  spacing: $large_padding;
+  color: $inverse_fg_color;
+  background-color: $inverse_bg_color;
+  border-radius: $pop_radius;
+  padding: $tiny_padding $standard_padding;
+}
 
 .search-entry {
-  width: 320px;
-  padding: 7px 9px;
-  border-radius: 6px;
-  border-color: #747467;
-  color: #eeeeec;
-  background-color: #2e3436; }
-  .search-entry:focus {
-    padding: 6px 8px;
-    border-width: 2px;
-    border-color: #215d9c; }
-  .search-entry .search-entry-icon {
+  width: 20em;
+  padding: $small_padding $standard_padding;
+  border-radius: 0;
+  color: rgba($inverse_fg_color, 0.85);
+  @include entry(normal, $bg_color);
+  &:focus { @include entry(focus, $bg_color); }
+  
+  .search-entry-icon {
     icon-size: 1em;
-    padding: 0 4px;
-    color: rgba(238, 238, 236, 0.7); }
-  .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
-    color: #eeeeec; }
+    padding: 0 $tiny_padding;
+    color: $inverse_fg_color; 
+  }
+}
 
 #searchResultsBin {
-  max-width: 1000px; }
+  max-width: 1000px; 
+}
 
 #searchResultsContent {
-  padding-left: 20px;
-  padding-right: 20px;
-  spacing: 16px; }
+  padding-left: $huge_padding;
+  padding-right: $huge_padding;
+  spacing: $large_padding; 
+}
 
 .search-section {
-  spacing: 16px; }
+  spacing: $large_padding; 
+}
 
 .search-section-content {
-  spacing: 32px; }
+  spacing: $large_padding * 2; 
+}
 
 .list-search-results {
-  spacing: 3px; }
+  spacing: $mini_padding; 
+}
 
 .search-section-separator {
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.2); }
+  height: $border_size;
+  background-color: rgba($inverse_fg_color, 0.25); 
+}
 
 .list-search-result-content {
-  spacing: 30px; }
+  spacing: $large_padding * 2; 
+}
 
 .list-search-result-title {
-  color: #e2e2df;
-  spacing: 12px; }
+  color: $inverse_fg_color;
+  spacing: $standard_padding; 
+}
 
 .list-search-result-description {
-  color: rgba(202, 202, 196, 0.5); }
+  color: $inverse_secondary_fg_color; 
+}
 
 .list-search-provider-details {
   width: 150px;
-  color: #e2e2df;
-  margin-top: 0.24em; }
+  color: $inverse_secondary_fg_color;
+  margin-top: $mini_padding; 
+}
 
 .list-search-provider-content {
-  spacing: 20px; }
+  spacing: $huge_padding; }
 
 .search-provider-icon {
-  padding: 15px; }
+  padding: $standard_padding; }

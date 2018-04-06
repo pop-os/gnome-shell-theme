@@ -18,11 +18,19 @@ $large_size: if($compact == 'false', 32px, 28px);
 
 // Widgets - Define widget sizes here, and 
 // define custom sizes as derivative of these
+$icon_size: 24px;
 $button_size: $medium_size;
 $menuitem_size: $small_size;
 $border_size: 1px;
 $scrollbar_size: 14px;
+$checkbox_size: $medium_size;
+$switch_size: 24px;
+$slider_size: if($compact == 'false', 2em, 1.5em);
+$modal_size: 30em;
+$system_button_size: $small_size + 4px;
+
 $popup_size: 15em;
+
 
 // Padding
 $no_padding: .1em;
@@ -31,11 +39,9 @@ $tiny_padding: if($compact == 'false', .6em, .4em);
 $small_padding: if($compact == 'false', .8em, .6em);
 $standard_padding: if($compact == 'false', 1.2em, 1.0em);
 $large_padding: if($compact == 'false', 1.6em, 1.2em);
+$huge_padding: if($compact == 'false', 2em, 1.6em); 
 
 // Widget paddings - Try to use Sparingly.
-$container_padding: .6em;
-$image_button_padding: if($compact == 'false', .4em, .2em);
-$menu_padding: if($compact == 'false', .4em, .2em);
 
 
 // Radii and other curves

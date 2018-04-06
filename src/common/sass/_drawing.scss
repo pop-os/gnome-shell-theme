@@ -87,28 +87,33 @@
 }
 
 
-@mixin entry($type, $focus_color: $accent_color) {
+@mixin entry($type, $text_color: $fg_color, $focus_color: $accent_color) {
 //
 // entry
 //
 
   @if $type == normal {
-    background-color: if($focus_color == $accent_color, rgba($base_color, 0.01), rgba($bg_color, 0.01));
+    background-color: if($text_color == $fg_color, rgba($base_color, 0.05), rgba($fg_color, 0.05));
     border-color: transparent;
-    box-shadow: inset 0 -1px if($focus_color == $accent_color, $track_color, $focus_color);
+    border-radius: $pop_radius $pop_radius 0 0;
+    box-shadow: inset 0 -1px if($text_color == $fg_color, rgba($fg_color, 0.25), rgba($inverse_fg_color, 0.25));
   }
 
   @if $type == focus {
+    background-color: if($text_color == $fg_color, rgba($base_color, 0.05), rgba($fg_color, 0.15));
     border-color: transparent;
+    border-radius: $pop_radius $pop_radius 0 0;
     box-shadow: inset 0 -2px $focus_color;
   }
 
   @if $type == hover {
+    border-radius: $pop_radius $pop_radius 0 0;
   }
 
   @if $type == insensitive {
     color: $disabled_fg_color;
     border-color: transparent;
+    border-radius: $pop_radius $pop_radius 0 0;
     box-shadow: inset 0 -1px if($focus_color == $accent_color, $divider_color, $focus_color);
   }
 }
