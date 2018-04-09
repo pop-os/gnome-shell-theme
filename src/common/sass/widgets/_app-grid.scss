@@ -1,160 +1,203 @@
-/* App Vault/Grid */
+/* 
+ * App Vault/Grid *
+ */
+ 
 .icon-grid {
-  spacing: 30px;
+  spacing: $large_padding * 2;
   -shell-grid-horizontal-item-size: 136px;
-  -shell-grid-vertical-item-size: 136px; }
-  .icon-grid .overview-icon {
-    icon-size: 96px; }
+  -shell-grid-vertical-item-size: 136px; 
+  
+  .overview-icon { icon-size: $icon_size * 4; }
+}
 
 .system-action-icon {
   background-color: black;
   color: white;
-  border-radius: 99px;
-  icon-size: 48px; }
+  border-radius: $circular_radius;
+  icon-size: $icon_size * 2; 
+}
 
-.app-view-controls {
-  padding-bottom: 32px; }
+/*.app-view-controls {
+  padding-bottom: $large_padding * 2; 
+}
 
 .app-view-control {
-  padding: 4px 32px; }
-  .app-view-control:checked {
-    color: white;
-    border-color: rgba(0, 0, 0, 0.7);
-    background-color: #222728;
-    box-shadow: inset 0 0 black;
-    text-shadow: none;
-    icon-shadow: none; }
-  .app-view-control:first-child {
-    border-right-width: 0;
-    border-radius: 3px 0 0 3px; }
-  .app-view-control:last-child {
-    border-radius: 0 3px 3px 0; }
+  padding: $tiny_padding $large_padding * 2; 
+  color: rgba($inverse_fg_color, 0.85);
+  background-color: transparent;
+  border-radius: 0;
+  
+  &:checked {
+    box-shadow: inset 0 -2px $accent_color; 
+    
+  }
+}*/
 
-.search-provider-icon:active, .search-provider-icon:checked,
-.list-search-result:active,
-.list-search-result:checked {
-  background-color: rgba(23, 25, 26, 0.9); }
-
-.search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:hover,
-.list-search-result:focus,
-.list-search-result:selected,
-.list-search-result:hover {
-  background-color: rgba(238, 238, 236, 0.1);
-  transition-duration: 200ms; }
-
-.app-well-app:active .overview-icon,
-.app-well-app:checked .overview-icon,
-.app-well-app.app-folder:active .overview-icon,
-.app-well-app.app-folder:checked .overview-icon,
-.show-apps:active .overview-icon,
-.show-apps:checked .overview-icon,
-.grid-search-result:active .overview-icon,
-.grid-search-result:checked .overview-icon {
-  background-color: rgba(23, 25, 26, 0.9);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7); }
-
-.app-well-app:hover .overview-icon,
-.app-well-app:focus .overview-icon,
-.app-well-app:selected .overview-icon,
-.app-well-app.app-folder:hover .overview-icon,
-.app-well-app.app-folder:focus .overview-icon,
-.app-well-app.app-folder:selected .overview-icon,
-.show-apps:hover .overview-icon,
-.show-apps:focus .overview-icon,
-.show-apps:selected .overview-icon,
-.grid-search-result:hover .overview-icon,
-.grid-search-result:focus .overview-icon,
-.grid-search-result:selected .overview-icon {
-  background-color: rgba(238, 238, 236, 0.1);
-  transition-duration: 0ms;
-  border-image: none;
-  background-image: none; }
-
-.app-well-app-running-dot {
-  width: 10px;
-  height: 3px;
-  background-color: #215d9c;
-  margin-bottom: 2px; }
+.app-view-controls { //favorties | all toggle container
+  width: $favorite_all_size;
+  padding-bottom: $huge_padding * 2;
+}
+.app-view-control { //favorties | all toggle button
+  padding: $tiny_padding $standard_padding;
+  font-weight: bold;
+  color: $inverse_secondary_fg_color;
+  border-radius:$pop_radius;
+  &:hover {
+    color: $inverse_fg_color;
+    background-color: $inverse_divider_color !important;
+  }
+  &:active {
+    color: $inverse_fg_color;
+    background-color: $inverse_track_color !important;
+  }
+  &:checked {
+    color: $inverse_fg_color;
+    background-color: rgba($bg_color, 0.01) !important;
+    box-shadow: inset 0 $line_size 0 $accent_color;
+    border-radius: 0;
+  }
+}
 
 .search-provider-icon,
-.list-search-result, .app-well-app .overview-icon,
-.app-well-app.app-folder .overview-icon,
-.show-apps .overview-icon,
-.grid-search-result .overview-icon {
-  color: #eeeeec;
-  border-radius: 4px;
-  padding: 6px;
-  border: 1px solid transparent;
-  transition-duration: 100ms;
-  text-align: center; }
+.list-search-result {
+  color: $inverse_fg_color;
+  border-radius: $pop_radius;
+  padding: $small_padding;
+  border: none;
+  text-align: center;
 
-.app-well-app.app-folder > .overview-icon {
-  background-color: rgba(46, 52, 54, 0.4); }
+  &:active,
+  &:checked { background-color: rgba($inverse_fg_color, 0.25); }
+  
+  &:focus,
+  &:selected,
+  &:hover { background-color: rgba($inverse_fg_color, 0.15); }
+}
+
+.app-well-app,
+.app-well-app.app-folder
+.show-apps,
+.grid-search-result {
+  .overview-icon {
+    color: $inverse_fg_color;
+    border-radius: $pop_radius;
+    padding: $small_padding;
+    border: none;
+    text-align: center;
+    
+    &.overview-icon-with-label{
+      padding: $standard_padding $small_padding $tiny_padding $small_padding;
+      spacing: $tiny_padding;
+    }
+  }
+  
+  &:active 
+  &:checked {
+    .overview-icon { background-color: rgba($inverse_fg_color, 0.25); }
+  }
+  
+  &:hover,
+  &:focus,
+  &:selected {
+    .overview-icon { background-color: rgba($inverse_fg_color, 0.15); }
+  }
+}
+
+.app-well-app-running-dot {
+  width: $app_running_indicator_size * 4;
+  height: $app_running_indicator_size;
+  background-color: $accent_color;
+  margin-bottom: $tiny_padding; 
+  border-radius: $pop_radius;
+}
+
+.app-well-app.app-folder 
+  > .overview-icon {
+  background-color: rgba($inverse_bg_color, 0.25);
+  border: $border_size solid rgba($inverse_fg_color, 0.25);
+  border-radius: $pop_radius*3;
+}
 
 .show-apps:checked .show-apps-icon,
 .show-apps:focus .show-apps-icon {
   color: white;
-  transition-duration: 100ms; }
+  transition-duration: 100ms; 
+}
 
+//These apply to the whole popup, not just the arrow
 .app-folder-popup {
-  -arrow-border-radius: 8px;
-  -arrow-background-color: rgba(46, 52, 54, 0.3);
-  -arrow-base: 24px;
-  -arrow-rise: 11px; }
+  -arrow-border-radius: $pop_radius*3;
+  -arrow-background-color: transparent;
+  -arrow-border-color: rgba($inverse_fg_color, 0.25);
+  -arrow-base: 0;
+  -arrow-rise: $mini_padding;
+  border: $border_size solid rgba($inverse_fg_color, 0.25); 
+  border-radius: $pop_radius*3;
+  background-color: rgba($inverse_bg_color, 0.25);
+}
 
 .app-folder-popup-bin {
-  padding: 5px; }
+  padding: $small_padding; 
+}
 
 .app-folder-icon {
-  padding: 5px;
-  spacing-rows: 5px;
-  spacing-columns: 5px; }
+  padding: $small_padding;
+  spacing-rows: $small_padding;
+  spacing-columns: $small_padding; 
+}
 
 .page-indicator {
-  padding: 15px 20px; }
-  .page-indicator .page-indicator-icon {
-    width: 18px;
-    height: 18px;
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-inactive.svg); }
-  .page-indicator:hover .page-indicator-icon {
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-hover.svg); }
-  .page-indicator:active .page-indicator-icon {
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-active.svg); }
-  .page-indicator:checked .page-indicator-icon, .page-indicator:checked:active {
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-checked.svg); }
-
-.app-well-app > .overview-icon.overview-icon-with-label,
-.grid-search-result .overview-icon.overview-icon-with-label {
-  padding: 10px 8px 5px 8px;
-  spacing: 4px; }
+  margin: $standard_padding $large_padding; 
+  width: $scrollbar_size;
+  height: $scrollbar_size;
+  background-color: transparent;
+  border: $line_size solid $inverse_fg_color;
+  border-radius: $circular_radius;
+  
+  &:hover {
+    background-color: mix($inverse_fg_color, $accent_color, 25%);
+    border: $line_size solid $inverse_fg_color;
+  }
+  
+  &:active,
+  &:checked {
+    background-color:$accent_color;
+    border: $line_size solid $accent_color;
+  } 
+}
 
 .workspace-thumbnails {
-  visible-width: 32px;
-  spacing: 11px;
-  padding: 8px;
-  border-radius: 9px 0 0 9px; }
-  .workspace-thumbnails:rtl {
-    border-radius: 0 9px 9px 0; }
-  .workspace-thumbnails .placeholder {
+  color: $inverse_fg_color;
+  background-color: transparent !important;
+  border: 0 solid rgba($inverse_fg_color, 0.5);
+  border-left-width: $border_size;
+  border-right-width: $border_size;
+  visible-width: $workspace_thumnail_size;
+  spacing: $standard_padding;
+  padding: $standard_padding;
+  
+  .placeholder {
     background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
     background-size: contain;
-    height: 24px; }
+    height: 24px; 
+  }
+}
 
 .workspace-thumbnail-indicator {
-  border: 4px solid #215d9c;
-  padding: 1px; }
+  border: 0 solid $accent_color;
+  border-left-width: $line_size; 
+  padding: $standard_padding;
+  border-radius: 0;
+}
 
 .search-display > StBoxLayout,
 .all-apps,
 .frequent-apps > StBoxLayout {
-  padding: 0px 88px 10px 88px; }
-
-.workspace-thumbnails {
-  color: #eeeeec;
-  background-color: #2e3436;
-  border: 1px solid rgba(238, 238, 236, 0.2); }
+  padding: 0px 88px 10px 88px; 
+}
 
 .search-statustext, .no-frequent-applications-label {
-  font-size: 2em;
-  font-weight: bold;
-  color: #eeeeec; }
+  font-size: 3em;
+  font-weight: 300;
+  color: rgba($inverse_fg_color, 0.85); 
+}

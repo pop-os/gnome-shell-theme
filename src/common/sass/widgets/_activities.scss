@@ -32,22 +32,26 @@
 }
 
 .search-entry {
-  width: 20em;
+  width: $entry_size;
   padding: $small_padding $standard_padding;
   border-radius: 0;
   color: rgba($inverse_fg_color, 0.85);
   @include entry(normal, $bg_color);
-  &:focus { @include entry(focus, $bg_color); }
+  background-color: rgba(white, 0.01); //needed to show box-shadow.
+  &:focus { 
+    @include entry(focus, $bg_color);
+    background-color: rgba(white, 0.01);
+  }
   
   .search-entry-icon {
-    icon-size: 1em;
+    icon-size: $icon_size/2;
     padding: 0 $tiny_padding;
     color: $inverse_fg_color; 
   }
 }
 
 #searchResultsBin {
-  max-width: 1000px; 
+  max-width: $search_results_size; 
 }
 
 #searchResultsContent {
