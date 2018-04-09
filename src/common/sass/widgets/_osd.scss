@@ -1,30 +1,48 @@
 /* OSD */
+%osd-panel {
+  color: $fg_color;
+  background-color: $base_color;
+  border: none;
+  box-shadow: $shadow_4;
+  border-radius: $pop_radius;
+  padding: $standard_padding;
+}
+
 .osd-window {
+  @extend %osd-panel;
   text-align: center;
-  font-weight: bold;
-  spacing: 1em;
-  margin: 32px;
-  min-width: 64px;
-  min-height: 64px; }
-  .osd-window .osd-monitor-label {
-    font-size: 3em; }
-  .osd-window .level {
-    height: 0.6em;
-    border-radius: 0.3em;
-    background-color: rgba(11, 12, 13, 0.5);
-    color: #eeeeec; }
-  .osd-window .level-bar {
-    background-color: #eeeeec;
-    border-radius: 0.3em; }
+  font-size: 13pt;
+  font-weight: 400;
+  spacing: $standard_padding;
+  margin: $huge_padding+1em;
+  min-width: $osd_size;
+  min-height: $osd_size; 
+  
+  .osd-monitor-label {
+    font-size: 3em; 
+  }
+  
+  .level {
+    height: $osd_bar_size;
+    border-radius: $circular_radius;
+    background-color: $track_color;
+    color: $primary_color; 
+  }
+  
+  .level-bar {
+    background-color: $primary_color;
+    border-radius: $circular_radius; 
+  }
+}
 
 /* Pad OSD */
 .pad-osd-window {
-  padding: 32px;
-  background-color: rgba(0, 0, 0, 0.8); }
-  .pad-osd-window .pad-osd-title-box {
-    spacing: 12px; }
-  .pad-osd-window .pad-osd-title-menu-box {
-    spacing: 6px; }
+  padding: $huge_padding+1em;
+  background-color: $bg_color; 
+  
+  .pad-osd-title-box { spacing: 12px; }
+  
+  .pad-osd-title-menu-box { spacing: 6px; }
+}
 
-.combo-box-label {
-  width: 15em; }
+.combo-box-label { width: 15em; }

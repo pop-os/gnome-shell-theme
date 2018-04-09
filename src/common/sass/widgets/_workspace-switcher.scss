@@ -1,6 +1,7 @@
 /* Workspace Switcher */
 .workspace-switcher-group {
-  padding: 12px; }
+  padding: $standard_padding; 
+}
 
 .workspace-switcher {
   background: transparent;
@@ -22,11 +23,8 @@
   background: transparent;
   border-radius: 8px; }
 
-.osd-window,
 .resize-popup,
-.switcher-list, .workspace-switcher-container {
-  color: #eeeeec;
-  background-color: #2e3436;
-  border: 1px solid rgba(238, 238, 236, 0.2);
-  border-radius: 12px;
-  padding: 12px; }
+.switcher-list, 
+.workspace-switcher-container {
+  @extend %osd-panel;
+}
