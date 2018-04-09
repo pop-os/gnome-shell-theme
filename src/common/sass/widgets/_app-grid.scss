@@ -3,18 +3,18 @@
  */
  
 .icon-grid {
-  spacing: $large_padding * 2;
+  spacing: $large_padding*2;
   -shell-grid-horizontal-item-size: 136px;
   -shell-grid-vertical-item-size: 136px; 
   
-  .overview-icon { icon-size: $icon_size * 4; }
+  .overview-icon { icon-size: $large_icon_size*2; }
 }
 
 .system-action-icon {
   background-color: black;
   color: white;
   border-radius: $circular_radius;
-  icon-size: $icon_size * 2; 
+  icon-size: $large_icon_size; 
 }
 
 /*.app-view-controls {
@@ -35,7 +35,7 @@
 
 .app-view-controls { //favorties | all toggle container
   width: $favorite_all_size;
-  padding-bottom: $huge_padding * 2;
+  padding-bottom: $huge_padding*2;
 }
 .app-view-control { //favorties | all toggle button
   padding: $tiny_padding $standard_padding;
@@ -104,7 +104,7 @@
 }
 
 .app-well-app-running-dot {
-  width: $app_running_indicator_size * 4;
+  width: $app_running_indicator_size*4;
   height: $app_running_indicator_size;
   background-color: $accent_color;
   margin-bottom: $tiny_padding; 

@@ -18,9 +18,13 @@ $large_size: if($compact == 'false', 32px, 28px);
 
 // Widgets - Define widget sizes here, and 
 // define custom sizes as derivative of these
+
+$small_icon_size: 12px;
+$standard_icon_size: 24px;
+$large_icon_size: 48px;
+
 $border_size: 1px;
 $line_size: 2px;
-$icon_size: 24px;
 $entry_size: 20em;
 $button_size: $medium_size;
 $menuitem_size: $small_size;
@@ -28,7 +32,7 @@ $scrollbar_size: 14px;
 $checkbox_size: $medium_size;
 $switch_size: 24px;
 $slider_size: if($compact == 'false', 2em, 1.5em);
-$modal_size: 30em;
+
 
 //Activities
 $search_results_size: 1200px;
@@ -45,7 +49,10 @@ $window_thumnail_size: 300px;
 $login_banner_size: $medium_size;
 $login_userlist_size: 30em;
 
-// Popover/Menu
+//Modal Dialogs
+$modal_size: 32em;
+
+//Popover/Menu
 $popup_size: 15em;
 $popup_ornament_size: 1.2em;
 
