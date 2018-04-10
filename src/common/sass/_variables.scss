@@ -28,7 +28,6 @@ $line_size: 2px;
 $entry_size: 20em;
 $button_size: $medium_size;
 $menuitem_size: $small_size;
-$scrollbar_size: 14px;
 $checkbox_size: $medium_size;
 $switch_size: 24px;
 $slider_size: if($compact == 'false', 2em, 1.5em);
@@ -51,6 +50,9 @@ $login_userlist_size: 30em;
 
 //Calendar
 $day_size: 2.4em;
+
+//Checkboxes
+$scrollbar_size: 14px;
 
 //Message List
 $message_list_size: 32em;
