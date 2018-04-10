@@ -49,6 +49,9 @@ $window_thumnail_size: 300px;
 $login_banner_size: $medium_size;
 $login_userlist_size: 30em;
 
+//Calendar
+$day_size: 2.4em;
+
 //Message List
 $message_list_size: 32em;
 
@@ -74,7 +77,7 @@ $large_padding: if($compact == 'false', 1.6em, 1.2em);
 $huge_padding: if($compact == 'false', 2em, 1.6em); 
 
 // Widget paddings - Try to use Sparingly.
-
+$submenu_padding: if($compact == 'false', 26px, 22px);
 
 // Radii and other curves
 $pop_radius: 4px;
