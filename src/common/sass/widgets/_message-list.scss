@@ -1,145 +1,100 @@
-/* Message list */
+/* 
+ * Message list *
+ */
+ 
 .message-list {
-  width: 31.5em; }
+  width: $message_list_size; 
+}
 
 .message-list-clear-button.button {
   background-color: transparent;
-  margin: 1.5em 1.5em 0; }
-  .message-list-clear-button.button:hover, .message-list-clear-button.button:focus {
-    background-color: #454c4c; }
+  margin: $large_padding $large_padding 0; 
+  padding: $small_padding
+  
+  &:hover,
+  &:focus {
+    background-color: $track_color; 
+  }
+}
 
 .message-list-sections {
-  spacing: 1em; }
+  spacing: $standard_padding; 
+}
 
 .message-list-section,
 .message-list-section-list {
-  spacing: 0.4em; }
+  spacing: $standard_padding; 
+}
 
 .message {
-  border-radius: 3px; }
-  .message:hover, .message:focus {
-    background-color: #454c4c; }
+  border-radius: $pop_radius; 
+  &:hover, 
+  &:focus {
+    background-color: $track_color; 
+  }
+}
 
 .message-icon-bin {
-  padding: 0.68em 0.2em 0.68em 0.68em; }
-  .message-icon-bin:rtl {
-    padding: 0.68em 0.68em 0.68em 0.2em; }
+  padding: 0.68em 0.2em 0.68em 0.68em; 
+  &:rtl {
+    padding: 0.68em 0.68em 0.68em 0.2em; 
+  }
+}
 
 .message-icon-bin > StIcon {
-  color: #bebeb6;
-  icon-size: 1.09em;
-  -st-icon-style: symbolic; }
+  color: $fg_color;
+  icon-size: $standard_icon_size;
+  -st-icon-style: symbolic; 
+  padding-top: 5px;
+}
 
 .message-secondary-bin {
-  padding: 0 0.82em; }
+  padding: 0 0.82em; 
+}
 
 .message-secondary-bin > .event-time {
-  color: #8e8e80;
+  color: $secondary_fg_color;
   font-size: 0.7em;
   /* HACK: the label should be baseline-aligned with a 1em label,
                      fake this with some bottom padding */
-  padding-bottom: 0.13em; }
+  padding-bottom: 0.13em; 
+}
 
 .message-secondary-bin > StIcon {
-  icon-size: 1.09em; }
+  icon-size: 1.09em; 
+}
 
 .message-title {
-  color: #e2e2df; }
+  color: darken($fg_color, 5%); 
+  font-weight: 300;
+  font-size: 16px;
+}
 
 .message-content {
-  color: #bebeb6;
-  padding: 10px; }
+  color: $fg_color;
+  padding: $small_padding; 
+  font-size: 13px;
+  font-weight: 500;
+}
 
 .message-media-control {
-  padding: 12px;
-  color: #bebeb6; }
-  .message-media-control:last-child:ltr {
-    padding-right: 18px; }
-  .message-media-control:last-child:rtl {
-    padding-left: 18px; }
-  .message-media-control:hover {
-    color: #eeeeec; }
-  .message-media-control:insensitive {
-    color: #8e8e80; }
+  padding: $standard_padding;
+  color: $secondary_fg_color; 
+  &:last-child:ltr { padding-right: 18px; }
+  &:last-child:rtl { padding-left: 18px; }
+  
+  &:hover { color: $fg_color; }
+  
+  &:insensitive { color: $disabled_fg_color; }
+}
 
 .media-message-cover-icon {
-  icon-size: 48px !important; }
+  icon-size: $large_icon_size !important; 
   .media-message-cover-icon.fallback {
-    color: #515a5a;
-    background-color: #393f3f;
-    border: 2px solid #393f3f;
-    border-radius: 2px;
-    icon-size: 16px;
-    padding: 8px; }/* Message list */
-.message-list {
-  width: 31.5em; }
-
-.message-list-clear-button.button {
-  background-color: transparent;
-  margin: 1.5em 1.5em 0; }
-  .message-list-clear-button.button:hover, .message-list-clear-button.button:focus {
-    background-color: #454c4c; }
-
-.message-list-sections {
-  spacing: 1em; }
-
-.message-list-section,
-.message-list-section-list {
-  spacing: 0.4em; }
-
-.message {
-  border-radius: 3px; }
-  .message:hover, .message:focus {
-    background-color: #454c4c; }
-
-.message-icon-bin {
-  padding: 0.68em 0.2em 0.68em 0.68em; }
-  .message-icon-bin:rtl {
-    padding: 0.68em 0.68em 0.68em 0.2em; }
-
-.message-icon-bin > StIcon {
-  color: #bebeb6;
-  icon-size: 1.09em;
-  -st-icon-style: symbolic; }
-
-.message-secondary-bin {
-  padding: 0 0.82em; }
-
-.message-secondary-bin > .event-time {
-  color: #8e8e80;
-  font-size: 0.7em;
-  /* HACK: the label should be baseline-aligned with a 1em label,
-                     fake this with some bottom padding */
-  padding-bottom: 0.13em; }
-
-.message-secondary-bin > StIcon {
-  icon-size: 1.09em; }
-
-.message-title {
-  color: #e2e2df; }
-
-.message-content {
-  color: #bebeb6;
-  padding: 10px; }
-
-.message-media-control {
-  padding: 12px;
-  color: #bebeb6; }
-  .message-media-control:last-child:ltr {
-    padding-right: 18px; }
-  .message-media-control:last-child:rtl {
-    padding-left: 18px; }
-  .message-media-control:hover {
-    color: #eeeeec; }
-  .message-media-control:insensitive {
-    color: #8e8e80; }
-
-.media-message-cover-icon {
-  icon-size: 48px !important; }
-  .media-message-cover-icon.fallback {
-    color: #515a5a;
-    background-color: #393f3f;
-    border: 2px solid #393f3f;
-    border-radius: 2px;
-    icon-size: 16px;
-    padding: 8px; }
+    color: $track_color;
+    background-color: $secondary_fg_color;
+    border-radius: $pop_radius;
+    icon-size: $standard_icon_size;
+    padding: $small_padding; 
+  }
+}
