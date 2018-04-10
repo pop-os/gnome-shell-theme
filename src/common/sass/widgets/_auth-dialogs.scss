@@ -31,7 +31,7 @@
     
     &:focus { @include entry(focus, $text_color: $inverse_fg_color); }
     &:insensitive { @include entry(insensitive, 
-                                   $text_color: $inverse_disabled_fg_color); }
+                                   $text_color: $inverse_secondary_fg_color); }
   }
   
   .modal-dialog-button-box {
@@ -48,7 +48,7 @@
     &:active { @include button(flat-active, $text_color: $inverse_fg_color); }
     
     &:insensitive { @include button(flat-insensitive, 
-                    $text_color: $inverse_fg_color); }
+                                    $text_color: $inverse_fg_color); }
     
     &:default {
       @include button(normal, 
