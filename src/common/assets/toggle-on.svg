@@ -5,11 +5,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="40"
-   height="20"
-   viewBox="0 0 40 20"
+   height="24"
+   viewBox="0 0 40 24"
    version="1.1"
    id="svg6"
    sodipodi:docname="toggle-on.svg"
@@ -22,11 +23,52 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs10" />
+     id="defs10">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient921"
+       id="radialGradient923"
+       cx="28.593098"
+       cy="88.59301"
+       fx="28.593098"
+       fy="88.59301"
+       r="11"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0909091,0,0,1.0909091,-3.1924703,-84.64692)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient921">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.5"
+         offset="0"
+         id="stop917" />
+      <stop
+         id="stop925"
+         offset="0.75"
+         style="stop-color:#000000;stop-opacity:0.5" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.19607843;"
+         offset="0.88586712"
+         id="stop927" />
+      <stop
+         id="stop929"
+         offset="0.94099605"
+         style="stop-color:#000000;stop-opacity:0.01" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="0.98501408"
+         id="stop829" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop919" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -40,27 +82,53 @@
      inkscape:window-width="2560"
      inkscape:window-height="1372"
      id="namedview8"
-     showgrid="false"
-     inkscape:zoom="30.475"
-     inkscape:cx="20"
-     inkscape:cy="10"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="16.092895"
+     inkscape:cy="10.34866"
      inkscape:window-x="0"
      inkscape:window-y="33"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
-  <rect
-     x="2"
-     y="2"
-     width="36"
-     height="16"
-     ry="8"
-     fill="#FF4081"
-     id="rect2"
-     style="fill:#faa41a;fill-opacity:1" />
+     inkscape:current-layer="svg6"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-others="false"
+     inkscape:object-paths="true"
+     fit-margin-top="1"
+     fit-margin-left="2"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid24"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
   <circle
-     cx="30"
-     cy="10"
-     r="6"
-     fill="#FFFFFF"
-     id="circle4" />
+     style="opacity:1;fill:url(#radialGradient923);fill-opacity:1;stroke-width:10.909091"
+     id="path915"
+     cx="28"
+     cy="12"
+     r="12" />
+  <path
+     sodipodi:nodetypes="ssssscs"
+     inkscape:connector-curvature="0"
+     id="rect26"
+     d="m 9,4 h 22 c 3.878,0 7,3.122 7,7 0,3.878 -3.122,7 -7,7 H 9 C 5.122,18 1.9999998,14.878 1.9999998,11 1.9999998,7.122 5.122,4 9,4 Z"
+     style="opacity:0.5;fill:#faa41a;stroke-width:10" />
+  <circle
+     style="opacity:1;fill:#faa41a;stroke-width:10"
+     id="path24"
+     cx="28.006447"
+     cy="10.999999"
+     r="10" />
+  <rect
+     style="opacity:0.5;fill:#faa41a;fill-opacity:0;stroke-width:10"
+     id="rect13"
+     width="40"
+     height="24"
+     x="0"
+     y="0"
+     ry="0" />
 </svg>
