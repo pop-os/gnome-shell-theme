@@ -44,7 +44,7 @@
   }
   
   .search-entry-icon {
-    icon-size: $standard_icon_size;
+    icon-size: 4px+$small_icon_size;
     padding: 0 $tiny_padding;
     color: $inverse_fg_color; 
   }

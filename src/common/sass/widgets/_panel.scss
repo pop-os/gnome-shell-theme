@@ -5,8 +5,6 @@
 #panel {
   background-color: $panel_bg_color;
   background-image: none;
-  /* transition from solid to transparent */
-  transition-duration: 250ms;
   font-weight: 400;
   box-shadow: $shadow_2;
   height: em($panel_size); 

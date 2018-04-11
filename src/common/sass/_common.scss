@@ -26,7 +26,7 @@ $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
 /* GLOBALS */
 * {
   // transition-timing-function: $deceleration_curve;
-  transition-duration: $longer_duration;
+  transition-duration: 250ms;
 }
 
 stage {
