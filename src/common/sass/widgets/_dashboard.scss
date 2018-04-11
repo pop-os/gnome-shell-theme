@@ -1,30 +1,38 @@
-/* Dash */
+/* 
+ * Dash *
+ */
  
 #dash {
-  font-size: 9pt;
-  color: #eeeeec;
-  background-color: #2e3436;
+  font-size: 10pt;
+  color: $inverse_fg_color;
+  background-color: rgba($inverse_bg_color, 0.85);
   padding: 4px 0;
-  border: 1px solid rgba(128, 128, 128, 0.4);
-  border-left: 0px;
-  border-radius: 0px 9px 9px 0px; }
+  border-radius: 0 $pop_radius $pop_radius 0; 
+}
   #dash:rtl {
-    border-radius: 9px 0 0 9px; }
+    border-radius: $pop_radius 0 0 $pop_radius;
+  }
+  
   #dash .placeholder {
-    background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
-    background-size: contain;
-    height: 24px; }
+    background-image: url("assets/dash-placeholder.svg");
+    background-size: .5*$small_icon_size;
+    height: .5*$small_icon_size; 
+  }
+  
   #dash .empty-dash-drop-target {
     width: 24px;
-    height: 24px; }
+    height: 24px; 
+  }
 
 .dash-item-container > StWidget {
-  padding: 4px 8px; }
+  padding: 4px 8px; 
+}
 
 .dash-label {
-  border-radius: 7px;
-  padding: 4px 12px;
-  color: #eeeeec;
-  background-color: rgba(46, 52, 54, 0.7);
+  border-radius: $pop_radius;
+  padding: $mini_padding $standard_padding;
+  color: $inverse_fg_color;
+  background-color: $inverse_bg_color;
   text-align: center;
-  -x-offset: 8px; }
+  -x-offset: 8px; 
+}
