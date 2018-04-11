@@ -1,6 +1,7 @@
 /* 
  * Modal Dialogs *
  */
+ 
 .headline {
   font-size: 110%; 
 }
@@ -79,9 +80,13 @@
 }
 
 /* End Session Dialog */
-.end-session-dialog { spacing: $huge_padding*2; }
+.end-session-dialog { 
+  spacing: $huge_padding*2; 
+}
 
-.end-session-dialog-list { padding-top: $huge_padding; }
+.end-session-dialog-list { 
+  padding-top: $huge_padding; 
+}
 
 .end-session-dialog-layout {
   padding-left: $large_padding; 
@@ -146,13 +151,14 @@
 
 .end-session-dialog-app-list-item-name,
 .end-session-dialog-session-list-item-name {
-  font-weight: 500; 
+  font-size: 12pt;
+  font-weight: 400; 
 }
 
 .end-session-dialog-app-list-item-description {
-  color: $error_color;
+  padding-top: $tiny_padding;
   font-size: 10pt; 
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* ShellMountOperation Dialogs */
