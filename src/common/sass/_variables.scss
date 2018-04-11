@@ -19,6 +19,7 @@ $large_size: if($compact == 'false', 32px, 28px);
 // Widgets - Define widget sizes here, and 
 // define custom sizes as derivative of these
 
+
 $small_icon_size: 12px;
 $standard_icon_size: 24px;
 $large_icon_size: 48px;
@@ -68,6 +69,9 @@ $notify_count_size: 1.6em;
 $osd_size: $large_size*2;
 $osd_bar_size: .3em;
 
+//Panel 
+$panel_size: $medium_size;
+
 //Popover/Menu
 $popup_size: 15em;
 $popup_ornament_size: 1.2em;
@@ -84,6 +88,7 @@ $huge_padding: if($compact == 'false', 2em, 1.6em);
 
 // Widget paddings - Try to use Sparingly.
 $submenu_padding: if($compact == 'false', 26px, 22px);
+$user_icon_padding: 1px;
 
 // Radii and other curves
 $pop_radius: 4px;
