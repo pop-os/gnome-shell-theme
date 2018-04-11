@@ -1,4 +1,7 @@
-/* NOTIFICATIONS & MESSAGE TRAY */
+/* 
+ * Notifications *
+ */
+ 
 .url-highlighter {
   link-color: $link_color; 
 }
@@ -10,116 +13,135 @@
   border-radius: $pop_radius;
   color: $fg_color;
   background-color: $bg_color;
-  box-shadow: $shadow_2; }
-  .notification-banner:hover, .notification-banner:focus {
-    background-color: $bg_color; }
-  .notification-banner .notification-icon {
-    padding: 5px; }
-  .notification-banner .notification-content {
-    padding: 5px;
-    spacing: 5px; }
-  .notification-banner .secondary-icon {
-    icon-size: 1.09em; }
-  .notification-banner .notification-actions {
+  box-shadow: $shadow_2; 
+  
+  &:hover, 
+  &:focus { background-color: $bg_color; }
+  
+  .notification-icon { padding: 5px; }
+  
+  .notification-content {
+    padding: $tiny_padding;
+    spacing: $tiny_padding; 
+  }
+  
+  .secondary-icon { icon-size: 1.09em; }
+  
+  .notification-actions {
     background-color: $bg_color;
     border-radius: $pop_radius;
-    padding-top: 2px;
-    spacing: 1px; }
+    padding: $small_padding;
+    spacing: 1px; 
+  }
+  
   .notification-banner .notification-button {
     padding: 4px 4px 5px;
     background-color: $bg_color; 
     border-bottom-radius: $pop_radius;
     border: 0 solid $border_color;
     border-top-width: $border_size;
+  
+    &:hover, 
+    &focus { background-color: rgba($accent_color, 0.5); }
   }
-    .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      background-color: rgba($accent_color, 0.5); 
-    }
+}
 
 .summary-source-counter {
   font-size: 10pt;
-  font-weight: bold;
-  height: 1.6em;
-  width: 1.6em;
+  font-weight: 400;
+  height: $notify_count_size;
+  width: $notify_count_size;
   -shell-counter-overlap-x: 3px;
   -shell-counter-overlap-y: 3px;
-  background-color: #215d9c;
-  color: #ffffff;
-  border: 2px solid #eeeeec;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 0.9em; }
+  background-color: $fg_color;
+  color: $bg_color;
+  border-radius: $circular_radius; 
+}
 
-.secondary-icon {
-  icon-size: 1.09em; }
+.secondary-icon { icon-size: $small_icon_size; }
 
-.chat-body {
-  spacing: 5px; }
+.chat-body { spacing: $tiny_padding; }
 
-.chat-response {
-  margin: 5px; }
+.chat-response { margin: $tiny_padding; }
 
-.chat-log-message {
-  color: #d6d6d1; }
+.chat-log-message { color: $secondry_fg_color; }
 
-.chat-new-group {
-  padding-top: 1em; }
+.chat-new-group { padding-top: $standard_padding; }
 
 .chat-received {
-  padding-left: 4px; }
-  .chat-received:rtl {
-    padding-left: 0px;
-    padding-right: 4px; }
+  padding-left: $tiny_padding; 
+  &:rtl {
+    padding-left: 0;
+    padding-right: $tiny_padding; 
+  }
+}
 
 .chat-sent {
-  padding-left: 18pt;
-  color: #cacac4; }
-  .chat-sent:rtl {
+  padding-left: $large_padding;
+  color: $fg_color; 
+  &:rtl {
     padding-left: 0;
-    padding-right: 18pt; }
+    padding-right: $large_padding; 
+  }
+}
 
 .chat-meta-message {
-  padding-left: 4px;
+  padding-left: $tiny_padding;
   font-size: 9pt;
-  font-weight: bold;
-  color: #bebeb6; }
-  .chat-meta-message:rtl {
+  color: $fg_color; 
+  &:rtl {
     padding-left: 0;
-    padding-right: 4px; }
+    padding-right: $tiny_padding; 
+  }
+}
 
 .hotplug-transient-box {
-  spacing: 6px;
-  padding: 2px 72px 2px 12px; }
+  spacing: $small_padding;
+  padding: 2px 72px 2px 12px; 
+}
 
 .hotplug-notification-item {
-  padding: 2px 10px; }
-  .hotplug-notification-item:focus {
-    padding: 1px 71px 1px 11px; }
+  padding: $mini_padding $standard_padding; 
+  
+  &:focus {
+    padding: 1px 71px 1px 11px; 
+  }
+}
 
 .hotplug-notification-item-icon {
-  icon-size: 24px;
-  padding: 2px 5px; }
+  icon-size: $standard_icon_size;
+  padding: $mini_padding $tiny_padding; 
+}
 
 .hotplug-resident-box {
-  spacing: 8px; }
+  spacing: 8px; 
+}
 
 .hotplug-resident-mount {
   spacing: 8px;
-  border-radius: 4px; }
-  .hotplug-resident-mount:hover {
-    background-color: rgba(57, 63, 63, 0.3); }
+  border-radius: 4px; 
+  
+  &:hover {
+    background-color: rgba(57, 63, 63, 0.3); 
+  }
+}
 
 .hotplug-resident-mount-label {
   color: inherit;
-  padding-left: 6px; }
+  padding-left: 6px; 
+}
 
 .hotplug-resident-mount-icon {
   icon-size: 24px;
-  padding-left: 6px; }
+  padding-left: 6px; 
+}
 
 .hotplug-resident-eject-icon {
-  icon-size: 16px; }
+  icon-size: 16px; 
+}
 
 .hotplug-resident-eject-button {
   padding: 7px;
   border-radius: 5px;
-  color: pink; }
+  color: $error_color; 
+}
