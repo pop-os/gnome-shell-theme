@@ -2,64 +2,75 @@
 .word-suggestions {
   font-size: 14pt;
   spacing: 12px;
-  min-height: 20pt; }
+  min-height: 20pt; 
+}
 
 #keyboard {
-  background-color: rgba(46, 52, 54, 0.7); }
+  background-color: $keyboard_bg_color; 
+}
 
 .key-container {
   padding: 4px;
-  spacing: 4px; }
+  spacing: 4px; 
+}
 
 .keyboard-key {
-  background-color: #393f3f;
+  background-color: $keyboard_key_bg;
   min-height: 2em;
   min-width: 2em;
-  font-size: 16pt;
-  border-radius: 3px;
-  border: 1px solid #464d4d;
-  color: #e5e5e5; }
+  font-size: 32pt;
+  border-radius: $pop_radius;
+  color: $keyboard_fg_color; 
+}
   .keyboard-key:focus {
-    color: #eeeeec;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-    box-shadow: inset 0px 0px 0px 1px #215d9c; }
+    color: $keyboard_focus_fg_color;
+    box-shadow: $shadow_2; 
+  }
+  
   .keyboard-key:hover, .keyboard-key:checked {
-    color: white;
-    border-color: rgba(0, 0, 0, 0.7);
-    background-color: #454f52;
-    box-shadow: inset 0 1px #5d696d;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+    color: $keyboard_focus_fg_color;
+    box-shadow: $shadow_3;
+  }
+  
   .keyboard-key:active {
-    color: white;
-    border-color: rgba(0, 0, 0, 0.7);
-    background-color: #222728;
-    box-shadow: inset 0 0 black;
-    text-shadow: none;
-    icon-shadow: none; }
+    color: $keyboard_focus_fg_color;
+    background-color: $keyboard_key_active_color;
+    box-shadow: $shadow_4;
+  }
+  
   .keyboard-key:grayed {
-    background-color: #2e3436;
-    color: #eeeeec;
-    border-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba($keyboard_key_bg, 0.85);
+    color: rgba($keyboard_fg_color, 0.5);
+  }
+  
   .keyboard-key.default-key {
-    border-color: #2d3232;
-    background-color: #1d2020;
-    background-size: 20px; }
+    background-color: $keyboard_key_default;
+    background-size: 20px; 
+  }
   .keyboard-key.enter-key {
-    border-color: #005684;
-    background-color: #006098;
-    background-image: url("resource:///org/gnome/shell/theme/key-enter.svg"); }
+    background-color: $keyboard_key_enter;
+    background-image: url("resource:///org/gnome/shell/theme/key-enter.svg"); 
+  }
+  
   .keyboard-key.shift-key-lowercase {
-    background-image: url("resource:///org/gnome/shell/theme/key-shift.svg"); }
+    background-image: url("resource:///org/gnome/shell/theme/key-shift.svg"); 
+  }
+  
   .keyboard-key.shift-key-uppercase {
-    background-image: url("resource:///org/gnome/shell/theme/key-shift-uppercase.svg"); }
+    background-image: url("resource:///org/gnome/shell/theme/key-shift-uppercase.svg"); 
+  }
+  
   .keyboard-key.shift-key-uppercase:latched {
-    background-image: url("resource:///org/gnome/shell/theme/key-shift-latched-uppercase.svg"); }
+    background-image: url("resource:///org/gnome/shell/theme/key-shift-latched-uppercase.svg"); 
+  }
+  
   .keyboard-key.hide-key {
-    background-image: url("resource:///org/gnome/shell/theme/key-hide.svg"); }
+    background-image: url("resource:///org/gnome/shell/theme/key-hide.svg"); 
+  }
+  
   .keyboard-key.layout-key {
-    background-image: url("resource:///org/gnome/shell/theme/key-layout.svg"); }
+    background-image: url("resource:///org/gnome/shell/theme/key-layout.svg"); 
+  }
 
 .keyboard-subkeys {
   color: white;
