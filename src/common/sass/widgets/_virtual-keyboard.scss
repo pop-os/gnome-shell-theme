@@ -83,7 +83,7 @@
   padding: 0.3em 0.5em 0.3em 0.5em;
   border-radius: 4px; }
   .candidate-box:selected, .candidate-box:hover {
-    background-color: #215d9c;
+    background-color: $accent_color;
     color: #ffffff; }
 
 .candidate-page-button-box {

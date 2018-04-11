@@ -47,7 +47,7 @@
   }
   
   .popup-inactive-menu-item {
-    color: $secondary_fg_color; 
+    color: $fg_color; 
     &:insensitive {
       color: $disabled_fg_color; 
     }
@@ -71,6 +71,44 @@
   border-color: $border_color;
   border-bottom-width: $border_size;
   border-bottom-style: solid; 
+}
+
+.system-menu-action {
+  color: $secondary_fg_color;
+  border-radius: $circular_radius;
+  /* wish we could do 50% */
+  padding: $standard_padding; 
+
+  &:hover,
+  &:focus {
+    background-color: $disabled_secondary_fg_color;
+    color: $fg_color;
+    border: none;
+    padding: $standard_padding; 
+  }
+  
+  &:active {
+    background-color: $disabled_fg_color;
+    color: $fg_color; 
+  }
+  
+  > StIcon {
+    icon-size: 16px; 
+  }
+}
+
+.system-switch-user-submenu-icon.user-icon {
+  icon-size: -4px+$standard_icon_size;
+  padding: 0 $user_icon_padding;
+  border-radius: $circular_radius;
+  background-size: contain;  
+}
+
+.system-switch-user-submenu-icon.default-icon {
+  icon-size: 4px+$small_icon_size;
+  padding: 0 $user_icon_padding; 
+  border-radius: $circular_radius; 
+  background-size: contain; 
 }
 
 /* fallback menu

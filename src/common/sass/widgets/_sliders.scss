@@ -1,10 +1,11 @@
 /* Slider */
 .slider {
   height: 1em;
+  color: $primary_color;
   -slider-height: 0.3em;
-  -slider-background-color: #333636;
-  -slider-border-color: #1c1f1f;
-  -slider-active-background-color: #215d9c;
-  -slider-active-border-color: #184472;
+  -slider-background-color: $track_color;
+  -slider-border-color: transparent;
+  -slider-active-background-color: $primary_color;
+  -slider-active-border-color: transparent;
   -slider-border-width: 1px;
   -slider-handle-radius: 6px; }
