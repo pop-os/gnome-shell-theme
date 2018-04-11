@@ -3,8 +3,10 @@
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("resource:///org/gnome/shell/theme/corner-ripple-ltr.png");
-  background-size: contain; }
+  background-image: url("assets/corner-ripple-ltr.png");
+  background-size: contain; 
 
-.ripple-box:rtl {
-  background-image: url("resource:///org/gnome/shell/theme/corner-ripple-rtl.png"); }
+  .ripple-box:rtl {
+    background-image: url("assets/corner-ripple-rtl.png"); 
+  }
+}
