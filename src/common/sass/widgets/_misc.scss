@@ -1,7 +1,12 @@
 
 
-/* Eeeky things */
+/* 
+ * Eeeky things *
+ */
+ 
 .magnifier-zoom-region {
-  border: 2px solid #215d9c; }
+  border: 2px solid $inverse_divider_color; 
   .magnifier-zoom-region.full-screen {
-    border-width: 0; }
+    border-width: 0; 
+  }
+}
