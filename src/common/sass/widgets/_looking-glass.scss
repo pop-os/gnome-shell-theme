@@ -1,6 +1,7 @@
 /* Looking Glass Inspector */
 
 #LookingGlassDialog {
+  color: $inverse_fg_color;
   background-color: rgba(0, 0, 0, 0.8);
   spacing: 4px;
   padding: 4px;
@@ -34,6 +35,7 @@
     spacing: 4px; }
 
 .lg-dialog StEntry {
+  color: $inverse_fg_color;
   selection-background-color: #bbbbbb;
   selected-color: #333333; }
 
