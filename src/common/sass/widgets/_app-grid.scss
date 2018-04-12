@@ -17,27 +17,11 @@
   icon-size: $large_icon_size; 
 }
 
-/*.app-view-controls {
-  padding-bottom: $large_padding * 2; 
-}
-
-.app-view-control {
-  padding: $tiny_padding $large_padding * 2; 
-  color: rgba($inverse_fg_color, 0.85);
-  background-color: transparent;
-  border-radius: 0;
-  
-  &:checked {
-    box-shadow: inset 0 -2px $accent_color; 
-    
-  }
-}*/
-
-.app-view-controls { //favorties | all toggle container
+.app-view-controls {
   width: $favorite_all_size;
   padding-bottom: $huge_padding*2;
 }
-.app-view-control { //favorties | all toggle button
+.app-view-control { 
   padding: $tiny_padding $standard_padding;
   font-weight: bold;
   color: $inverse_secondary_fg_color;
@@ -100,6 +84,19 @@
   &:focus,
   &:selected {
     .overview-icon { background-color: rgba($inverse_fg_color, 0.15); }
+  }
+}
+
+.show-apps-icon {
+  padding: 11px;
+  color: $inverse_secondary_fg_color;
+  
+  &:hover,
+  &:focus,
+  &:selected,
+  &:checked,
+  &:active {
+    color: $inverse_fg_color;
   }
 }
 

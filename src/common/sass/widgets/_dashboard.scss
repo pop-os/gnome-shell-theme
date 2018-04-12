@@ -24,8 +24,12 @@
     height: 24px; 
   }
 
-.dash-item-container > StWidget {
-  padding: 4px 8px; 
+.dash-item-container {
+  padding: 0;
+  
+  > StWidget {
+    padding: 0;
+  } 
 }
 
 .dash-label {
@@ -36,3 +40,4 @@
   text-align: center;
   -x-offset: 8px; 
 }
+
