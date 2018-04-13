@@ -19,6 +19,7 @@
   color: $fg_color;
   background-color: $bg_color;
   border: none;
+  width: $modal_size;
   
   .modal-dialog-content-box {
     padding: $huge_padding; 
