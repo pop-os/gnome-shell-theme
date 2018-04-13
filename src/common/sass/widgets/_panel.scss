@@ -1,117 +1,105 @@
 /* 
  * Panel *
  */
- 
+
 #panel {
   background-color: $panel_bg_color;
-  background-image: none;
-  font-weight: 400;
-  box-shadow: $shadow_2;
-  height: em($panel_size); 
-  
-  &.unlock-screen, 
-  &.login-screen, 
-  &.lock-screen {
-    background-color: rgba($panel_bg_color, 0.85); 
-  }
-  #panelLeft, 
-  #panelCenter {
-    spacing: $small_padding; 
-  }
+  font-weight: bold;
+  height: $panel_size; 
 
+  &.unlock-screen, &.login-screen, &.lock-screen {
+    background-color: transparent; 
+  }
+  #panelLeft, #panelCenter {
+    spacing: $mini_padding; 
+  }
   .panel-corner {
-    -panel-corner-radius: $pop_radius;
+    -panel-corner-radius: $pop-radius;
     -panel-corner-background-color: $panel_bg_color;
-    -panel-corner-border-width: $line_size;
+    -panel-corner-border-width: 2px;
     -panel-corner-border-color: transparent; 
   
-    &:active, 
-    &:overview, 
-    &:focus {
-      -panel-corner-border-color: $panel_bg_color; 
+    &:active, &:overview, &:focus {
+      -panel-corner-border-color: transparent; 
     }
-    &.lock-screen, 
-    &.login-screen, 
-    &.unlock-screen {
+    &.lock-screen, &.login-screen, &.unlock-screen {
       -panel-corner-radius: 0;
       -panel-corner-background-color: transparent;
       -panel-corner-border-color: transparent; 
     }
   }
-  
   .panel-button {
     -natural-hpadding: 12px;
     -minimum-hpadding: 6px;
     font-weight: 700;
-    color: rgba($inverse_fg_color, 0.85); 
+    color: $inverse_secondary_fg_color;
   
-    
-    &:hover { color: $inverse_fg_color; }
-    
-    &:active, 
-    &:overview, 
-    &:focus, 
-    &:checked {
-      margin-top: 2px; // Needed to keep button from jumping up.
-      box-shadow: inset 0 -1*$line_size 0px $accent_color;
-      border-bottom: $line_size solid $accent_color;
-      color: $inverse_fg_color; 
-    }
-    
     .app-menu-icon {
       -st-icon-style: symbolic;
-      margin-left: $mini_padding;
-      margin-right: $mini_padding; 
+      margin-left: 4px;
+      margin-right: 4px; 
+    }
+    &:hover {
+      color: $inverse_fg_color;
+    }
+    &:active, &:overview, &:focus, &:checked {
+      background-color: rgba(0, 0, 0, 0.01);
+      box-shadow: inset 0 -2px 0px $accent_color;
+      color: white; 
+    
+      &:active > .system-status-icon, &:overview > .system-status-icon, &:focus > .system-status-icon, &:checked > .system-status-icon {
+        icon-shadow: black 0 2px 2px; 
+      }
     }
     .system-status-icon {
-      icon-size: 4px+$small_icon_size;
-      padding: 0 0.1em+$mini_padding; 
+      icon-size: 1.16em;
+      padding: 0 5px; 
     }
-    .unlock-screen #panel .panel-button,
-    .login-screen #panel .panel-button,
-    .lock-screen #panel .panel-button {
+    .unlock-screen #panel &,
+    .login-screen #panel &,
+    .lock-screen #panel & {
       color: $inverse_fg_color; 
-
+      
       &:focus,
       &:hover,
-      &:active { color: $inverse_fg_color; }
-    }
-  }
-  
-  &.solid {
-    background-color: $panel_bg_color; 
-    box-shadow: none;
-  
-    .panel-corner {
-      -panel-corner-background-color: $panel_bg_color; 
-    }
-    
-    .panel-button {
-      color: rgba($inverse_fg_color, 0.85);
-    
-      &:hover,
-      &:active, 
-      &:overview, 
-      &:focus,
-      &:checked {
+      &:active {
         color: $inverse_fg_color; 
       }
     }
   }
-  
   .panel-status-indicators-box,
-  .panel-status-menu-box { 
-    spacing: $mini_padding; 
+  .panel-status-menu-box {
+    spacing: 2px; 
   }
-  
-  .power-status.panel-status-indicators-box { 
+  .power-status.panel-status-indicators-box {
     spacing: 0; 
   }
-  
   .screencast-indicator {
     color: $error_color; 
   }
+  &.solid {
+    background-color: $panel_bg_color; 
   
+    .panel-corner {
+      -panel-corner-background-color: black; 
+    }
+    .panel-button {
+      color: $inverse_secondary_fg_color; 
+    
+      &:hover, 
+      &:active, 
+      &:overview, 
+      &:focus, 
+      &:checked {
+        color: $inverse_fg_color; 
+      }
+    }
+    .system-status-icon,
+    .app-menu-icon > StIcon,
+    .popup-menu-arrow {
+      icon-shadow: none; 
+    }
+  }
 }
 
 #appMenu {
