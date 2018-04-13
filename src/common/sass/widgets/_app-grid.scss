@@ -130,6 +130,7 @@
   border: $border_size solid rgba($inverse_fg_color, 0.25); 
   border-radius: $pop_radius*3;
   background-color: rgba($inverse_bg_color, 0.25);
+  padding: 0;
 }
 
 .app-folder-popup-bin {
@@ -165,9 +166,7 @@
 .workspace-thumbnails {
   color: $inverse_fg_color;
   background-color: transparent !important;
-  border: 0 solid rgba($inverse_fg_color, 0.5);
-  border-left-width: $border_size;
-  border-right-width: $border_size;
+  border: $line_size solid transparent;
   visible-width: $workspace_thumnail_size;
   spacing: $standard_padding;
   padding: $standard_padding;
