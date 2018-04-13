@@ -1,4 +1,4 @@
-**NOTE: Before reporting a bug, please check whether it also occurs with other themes.**
+e**NOTE: Before reporting a bug, please check whether it also occurs with other themes.**
 > If the bug also occurs with other themes (especially upstream default theme),
 it is very likely an upstream issue.
 
@@ -9,7 +9,7 @@ it is very likely an upstream issue.
  * Distribution - (run ```lsb_release -a```)
  * Gtk+ 3.0 version - (run ```apt policy libgtk-3-0```)
  * Desktop environment - 
- * Pop version - (run ```head -n 3 /usr/share/themes/Pop/gtk-3.22/gtk.css```)
+ * Pop version - (run ```head -n 3 /usr/share/gnome-shell/theme/pop.css```)
  ```
 
 **Related Application and/or Shell theming (or name of widget)**
