@@ -28,7 +28,7 @@
     &:active, 
     &:overview, 
     &:focus {
-      -panel-corner-border-color: $accent_color; 
+      -panel-corner-border-color: $panel_bg_color; 
     }
     &.lock-screen, 
     &.login-screen, 
@@ -53,6 +53,7 @@
     &:focus, 
     &:checked {
       box-shadow: inset 0 -1*$line_size 0px $accent_color;
+      border-bottom: $line_size solid $accent_color;
       color: $inverse_fg_color; 
     }
     

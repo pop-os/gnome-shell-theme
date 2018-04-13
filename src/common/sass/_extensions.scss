@@ -241,25 +241,3 @@ StBin.gsconnect-tooltip (inherits from .osd-window)
     color: $fg_color;
   }
 }
-
-#panel {
-  height: 32px; // = 1.875em
-  border-top-width: 0;
-  border-bottom-width: 1px;
-  border-color: $panel_bg_color;
-  background-color: $panel_bg_color;
-  background-gradient-drection: vertical;
-  background-gradient-start: $panel_bg_color;
-  background-gradient-end: $panel_bg_color;
-  color: $fg_color;
-
-  .panel-button {
-    &:active,
-    &:focus {
-      background-color: $panel_bg_color;
-      background-gradient-drection: vertical;
-      background-gradient-start: $panel_bg_color;
-      background-gradient-end: $panel_bg_color;
-    }
-  }
-}
