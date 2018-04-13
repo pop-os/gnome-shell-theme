@@ -25,7 +25,8 @@
   }
 
 .dash-item-container {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: $small_padding;
   
   > StWidget {
     padding: 0;
