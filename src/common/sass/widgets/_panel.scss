@@ -52,6 +52,7 @@
     &:overview, 
     &:focus, 
     &:checked {
+      margin-top: 2px; // Needed to keep button from jumping up.
       box-shadow: inset 0 -1*$line_size 0px $accent_color;
       border-bottom: $line_size solid $accent_color;
       color: $inverse_fg_color; 
