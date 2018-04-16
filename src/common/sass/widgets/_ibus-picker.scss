@@ -5,11 +5,18 @@
 .candidate-popup-content {
   padding: 0.5em;
   spacing: 0.3em;
+  background-color: $bg_color;
+  border-radius: $pop_radius;
+  box-shadow: $shadow_3;
 }
 
 .candidate-index {
-  padding: 0 0.5em 0 0;
-  color: darken($fg_color,10%);
+  padding: 2*$mini_padding;
+  margin-right: $small_padding;
+  color: $inverse_fg_color;
+  border-radius: $pop_radius;
+  
+  background-color: rgba($inverse_bg_color, 0.5);
 }
 
 .candidate-box {
@@ -18,8 +25,7 @@
   
   &:selected,
   &:hover { 
-    background-color: $selected_bg_color; 
-    color: $selected_fg_color; 
+    background-color: $accent_color; 
   }
 }
 
@@ -40,7 +46,8 @@
 }
 
 .candidate-page-button-previous { 
-  border-radius: 4px 0px 0px 4px; border-right-width: 0; 
+  border-radius: 4px 0px 0px 4px; 
+  border-right-width: 0; 
 }
 .candidate-page-button-next { 
   border-radius: 0px 4px 4px 0px;  
