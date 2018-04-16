@@ -20,6 +20,7 @@
   background-color: $bg_color;
   box-shadow: $shadow_4;
   border: none;
+  width: $modal_size;
   
   .modal-dialog-content-box {
     padding: $huge_padding; 

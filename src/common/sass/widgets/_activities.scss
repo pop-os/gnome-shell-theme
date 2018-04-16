@@ -103,3 +103,45 @@
 .search-provider-icon {
   padding: $standard_padding; 
 }
+
+.page-indicator {
+  margin: $standard_padding $large_padding; 
+  width: $scrollbar_size;
+  height: $scrollbar_size;
+  background-color: transparent;
+  border: $line_size solid $inverse_fg_color;
+  border-radius: $circular_radius;
+  
+  &:hover {
+    background-color: mix($inverse_fg_color, $accent_color, 25%);
+    border: $line_size solid $inverse_fg_color;
+  }
+  
+  &:active,
+  &:checked {
+    background-color:$accent_color;
+    border: $line_size solid $accent_color;
+  } 
+}
+
+.workspace-thumbnails {
+  color: $inverse_fg_color;
+  background-color: transparent !important;
+  border: $line_size solid transparent;
+  visible-width: $workspace_thumnail_size;
+  spacing: $standard_padding;
+  padding: $standard_padding;
+  
+  .placeholder {
+    background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
+    background-size: contain;
+    height: 24px; 
+  }
+}
+
+.workspace-thumbnail-indicator {
+  border: 0 solid $accent_color;
+  border-left-width: $line_size; 
+  padding: $standard_padding;
+  border-radius: 0;
+}

@@ -53,9 +53,9 @@
 }
 
 .nm-dialog-item {
-  font-size: 110%;
+  font-size: 100%;
   border-bottom: $border_size solid $border_color;
-  padding: $standard_padding;
+  padding: $tiny_padding;
   spacing: 20px; 
 
   &:selected {

@@ -17,7 +17,6 @@ easier maintenance.
 Pop GNOME Shell supports GNOME 3.18, 3.24, 3.26, and 3.28 
 * GNOME-Shell     >= 3.18.3
 * Pop GTK Theme*
- ```
 
  > **Note:**
  >
