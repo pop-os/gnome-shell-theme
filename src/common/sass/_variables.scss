@@ -91,7 +91,7 @@ $huge_padding: if($compact == 'false', 20px, 16px);
 
 // Widget paddings - Try to use Sparingly.
 $submenu_padding: if($compact == 'false', 26px, 22px);
-$user_icon_padding: $mini_padding;
+$user_icon_padding: if($compact == 'false', 3px, 2px);
 
 // Radii and other curves
 $pop_radius: 4px;
