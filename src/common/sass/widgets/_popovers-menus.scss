@@ -66,7 +66,7 @@
 
 .popup-separator-menu-item {
   height: $border_size;
-  margin: $small_padding $huge_padding+.5em;
+  margin: $small_padding 5px+$huge_padding;
   background-color: transparent;
   border-color: $border_color;
   border-bottom-width: $border_size;
@@ -98,17 +98,17 @@
 }
 
 .system-switch-user-submenu-icon.user-icon {
-  icon-size: -4px+$standard_icon_size;
-  padding: 0 $user_icon_padding;
+  icon-size: 5px+$small_icon_size;
+  margin: 0 $user_icon_padding 0 $user-icon-padding;
   border-radius: $circular_radius;
   background-size: contain;  
 }
 
 .system-switch-user-submenu-icon.default-icon {
-  icon-size: 4px+$small_icon_size;
-  padding: 0 $user_icon_padding; 
-  border-radius: $circular_radius; 
-  background-size: contain; 
+  icon-size: 5px+$small_icon_size;
+  margin: 0 $user_icon_padding 0 $user-icon-padding;
+  border-radius: $circular_radius;
+  background-size: contain;  
 }
 
 /* fallback menu

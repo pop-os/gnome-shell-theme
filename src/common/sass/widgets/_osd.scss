@@ -17,7 +17,7 @@
   font-size: 13pt;
   font-weight: 400;
   spacing: $standard_padding;
-  margin: $huge_padding+1em;
+  margin: $huge_padding;
   min-width: $osd_size;
   min-height: $osd_size; 
   
@@ -40,7 +40,7 @@
 
 /* Pad OSD */
 .pad-osd-window {
-  padding: $huge_padding+1em;
+  padding: $huge_padding;
   background-color: $bg_color; 
   
   .pad-osd-title-box { spacing: 12px; }
