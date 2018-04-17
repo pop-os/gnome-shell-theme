@@ -16,11 +16,11 @@
   box-shadow: $shadow_2; 
   
   &:hover, 
-  &:focus { 
+  &:focus {
     background-color: $bg_color; 
   }
   
-  .notification-icon { 
+  .notification-icon {
     padding: 5px; 
   }
   
@@ -29,7 +29,7 @@
     spacing: $tiny_padding; 
   }
   
-  .secondary-icon { 
+  .secondary-icon {
     icon-size: 1.09em; 
   }
   
@@ -48,7 +48,9 @@
     border-top-width: $border_size;
   
     &:hover, 
-    &focus { background-color: rgba($accent_color, 0.5); }
+    &focus {
+      background-color: rgba($accent_color, 0.5); 
+    }
   }
 }
 
@@ -64,15 +66,25 @@
   border-radius: $circular_radius; 
 }
 
-.secondary-icon { icon-size: $small_icon_size; }
+.secondary-icon {
+  icon-size: $small_icon_size; 
+}
 
-.chat-body { spacing: $tiny_padding; }
+.chat-body {
+  spacing: $tiny_padding; 
+}
 
-.chat-response { margin: $tiny_padding; }
+.chat-response {
+  margin: $tiny_padding; 
+}
 
-.chat-log-message { color: $secondary_fg_color; }
+.chat-log-message {
+  color: $secondary_fg_color; 
+}
 
-.chat-new-group { padding-top: $standard_padding; }
+.chat-new-group {
+  padding-top: $standard_padding; 
+}
 
 .chat-received {
   padding-left: $tiny_padding; 
