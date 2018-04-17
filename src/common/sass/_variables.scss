@@ -81,17 +81,17 @@ $screen_shield_notifications_size: 30em;
 
 
 // Padding
-$no_padding: .1em;
-$mini_padding: .2em;
-$tiny_padding: if($compact == 'false', .6em, .4em);
-$small_padding: if($compact == 'false', .8em, .6em);
-$standard_padding: if($compact == 'false', 1.2em, 1.0em);
-$large_padding: if($compact == 'false', 1.6em, 1.2em);
-$huge_padding: if($compact == 'false', 2em, 1.6em); 
+$no_padding: 1px;
+$mini_padding: 2px;
+$tiny_padding: if($compact == 'false', 6px, 4px);
+$small_padding: if($compact == 'false', 8px, 6px);
+$standard_padding: if($compact == 'false', 12px, 10px);
+$large_padding: if($compact == 'false', 16px, 12px);
+$huge_padding: if($compact == 'false', 20px, 16px); 
 
 // Widget paddings - Try to use Sparingly.
 $submenu_padding: if($compact == 'false', 26px, 22px);
-$user_icon_padding: 1px;
+$user_icon_padding: if($compact == 'false', 3px, 2px);
 
 // Radii and other curves
 $pop_radius: 4px;

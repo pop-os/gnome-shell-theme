@@ -14,7 +14,7 @@
     spacing: $mini_padding; 
   }
   .panel-corner {
-    -panel-corner-radius: $pop-radius;
+    -panel-corner-radius: $pop_radius;
     -panel-corner-background-color: $panel_bg_color;
     -panel-corner-border-width: 2px;
     -panel-corner-border-color: transparent; 
@@ -53,7 +53,7 @@
     }
     .system-status-icon {
       icon-size: 1.16em;
-      padding: 0 5px; 
+      padding: 0 $tiny_padding; 
     }
     .unlock-screen #panel &,
     .login-screen #panel &,
