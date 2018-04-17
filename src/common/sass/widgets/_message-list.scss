@@ -43,9 +43,9 @@
 
 .message-icon-bin > StIcon {
   color: $fg_color;
-  icon-size: $standard_icon_size;
+  icon-size: 8px+$standard_icon_size;
   -st-icon-style: symbolic; 
-  padding-top: 9px;
+  padding-top: 4px;
 }
 
 .message-secondary-bin {
