@@ -1,4 +1,4 @@
-e**NOTE: Before reporting a bug, please check whether it also occurs with other themes.**
+**NOTE: Before reporting a bug, please check whether it also occurs with other themes.**
 > If the bug also occurs with other themes (especially upstream default theme),
 it is very likely an upstream issue.
 
