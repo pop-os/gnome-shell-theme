@@ -16,16 +16,22 @@
   box-shadow: $shadow_2; 
   
   &:hover, 
-  &:focus { background-color: $bg_color; }
+  &:focus { 
+    background-color: $bg_color; 
+  }
   
-  .notification-icon { padding: 5px; }
+  .notification-icon { 
+    padding: 5px; 
+  }
   
   .notification-content {
     padding: $tiny_padding;
     spacing: $tiny_padding; 
   }
   
-  .secondary-icon { icon-size: 1.09em; }
+  .secondary-icon { 
+    icon-size: 1.09em; 
+  }
   
   .notification-actions {
     background-color: $bg_color;
