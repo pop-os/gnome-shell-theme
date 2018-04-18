@@ -3,23 +3,23 @@
  */
  
 .switcher-popup {
-  padding: $standard_padding;
+  padding: $small_padding;
   spacing: $large_padding; 
   
 }
 
 .switcher-list-item-container {
-  spacing: $small_padding; 
+  spacing: $large_padding; 
 }
 
 .switcher-list {
   
   .item-box {
-    padding: $small_padding;
+    padding: $large_padding;
     border-radius: $pop_radius;
     
     &:outlined {
-      padding: $tiny_padding;
+      padding: $small_padding;
       border: $border_size solid $inverse_fg_color;
     }
     
@@ -30,7 +30,7 @@
   }
   
   .thumnail-box {
-    padding: $mini_padding;
+    padding: $small_padding;
     spacing: $tiny_padding;
   }
   
