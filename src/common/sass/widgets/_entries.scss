@@ -9,6 +9,7 @@ StEntry {
   selection-background-color: $primary_color;
   selected-color: $white;
   @include entry(normal);
+  min-height: $medium_size;
   
   &:focus { @include entry(focus); }
   &:insensitive { @include entry(insensitive); }
