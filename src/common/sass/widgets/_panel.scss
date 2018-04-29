@@ -81,7 +81,7 @@
     background-color: $panel_bg_color; 
   
     .panel-corner {
-      -panel-corner-background-color: black; 
+      -panel-corner-background-color: $panel_bg_color; 
     }
     .panel-button {
       color: $inverse_secondary_fg_color; 
