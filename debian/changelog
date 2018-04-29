@@ -1,3 +1,9 @@
+pop-gnome-shell-theme (4.0.1) bionic; urgency=medium
+
+  * Ensure that items in the dash-to-dock dock are centered.
+
+ -- Ian Santopietro <ian@system76.com>  Sun, 29 Apr 2018 07:39:53 -0700
+
 pop-gnome-shell-theme (4.0.0) bionic; urgency=medium
 
   * GNOME Shell theme split into separate maintenance.
