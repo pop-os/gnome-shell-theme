@@ -60,7 +60,6 @@
 
 .app-well-app,
 .app-well-app.app-folder
-.show-apps,
 .grid-search-result {
   .overview-icon {
     color: $inverse_fg_color;
@@ -70,7 +69,6 @@
     text-align: center;
     
     &.overview-icon-with-label{
-      padding: $standard_padding $small_padding $tiny_padding $small_padding;
       spacing: $tiny_padding;
     }
   }
@@ -88,7 +86,10 @@
 }
 
 .show-apps-icon {
-  padding: 11px;
+  padding-right: 16px;
+}
+
+.show-apps-icon {
   color: $inverse_secondary_fg_color;
   
   &:hover,
