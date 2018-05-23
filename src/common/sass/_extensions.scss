@@ -120,17 +120,16 @@ StBin.gsconnect-tooltip (inherits from .osd-window)
   background-color: transparent;
 }
 
-#dashtodockContainer.extended #dash {
-  padding: 0;
-  border-radius: 0;
-}
-
 #dashtodockContainer .app-well-app-running-dot {
   background-color: transparent;
 }
 
-#dashtodockContainer .dash-item-container > StWidget {
-  background-size: cover;
+#dashtodockContainer .dash-item-container {
+  padding: 0; // Need to set 0 to prevent off-center icons. 'none' doesn't work
+  
+  > StWidget {
+    background-size: cover;
+  }
 }
 
 @each $p, $pt in ('.left', 'left'),
