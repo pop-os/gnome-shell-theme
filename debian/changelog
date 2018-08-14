@@ -1,3 +1,9 @@
+pop-gnome-shell-theme (4.0.2cosmic0) cosmic; urgency=medium
+
+  * Cosmic release
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 14 Aug 2018 09:06:29 -0600
+
 pop-gnome-shell-theme (4.0.2) bionic; urgency=medium
 
   * Fix the Show-Apps button in both Dash-to-Dock and the stock dashboard.
