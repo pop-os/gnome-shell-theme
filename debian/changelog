@@ -1,3 +1,9 @@
+pop-gnome-shell-theme (4.0.3) bionic; urgency=medium
+
+  * Fix for cosmic packaging
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 21 Aug 2018 10:54:53 -0600
+
 pop-gnome-shell-theme (4.0.2) bionic; urgency=medium
 
   * Fix the Show-Apps button in both Dash-to-Dock and the stock dashboard.
