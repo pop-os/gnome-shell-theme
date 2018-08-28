@@ -3,65 +3,84 @@
  */
  
 .popup-menu {
-  min-width: $popup_size; 
-  background-color: $bg_color;
-  border: none;
-  border-radius: $pop_radius;
-  box-shadow: $shadow_3;
-  margin: $tiny_padding;
-  
+  min-width: 200px;
+
+  .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
-    background-color: $darker_bg_color;
+    background-color: $alt_base_color;
+    box-shadow: $shadow_0;
   }
-  
-  .popup-menu-content {
-    padding: $standard_padding 0; 
-  }
-  
+
+  .popup-menu-content { padding: 8px 0; }
   .popup-menu-item {
-    color: $fg_color;
-    spacing: $standard_padding; 
-    
-    &:ltr {
-      padding: .4em 1.75em .4em 0em; }
-    &:rtl {
-      padding: .4em 0em .4em 1.75em; }
-      
-    &:checked,
-    &:checked.selected { 
+    // min-height: $menuitem_size - 4px * 2;
+    spacing: 8px;
+    transition-duration: $shorter_duration;
+    border: none;
+
+    &:ltr { padding: 0.4em 24px 0.4em 0; }
+    &:rtl { padding: 0.4em 0 0.4em 24px; }
+    &:checked {
+      background-color: darken($accent_color, 0.5);
       color: $inverse_fg_color;
-      background-color: darken($accent_color, 7%); 
+      box-shadow: $shadow_0;
+      font-weight: normal;
+      border: none;
+      
+      &.selected {
+        background-color: mix($inverse_fg_color, darken($accent_color, 0.5), percentage($lower_opacity / 2));
+        color: $inverse_fg_color;
+      }
+      &:active {
+        background-color: mix($inverse_fg_color, darken($accent_color, 0.5), percentage($lower_opacity));
+        color: $inverse_fg_color !important;
+      }
+      &:insensitive { color: $inverse_disabled_fg_color; }
     }
-    
     &.selected {
-      background-color: $darkest_bg_color;
+      background-color: $divider_color;
+      color: $fg_color;
+      transition-duration: 0ms;
     }
-    
     &:active {
-      background-color: $darkest_bg_color;
+      background-color: $track_color;
+      color: $fg_color;
+      transition-duration: $longer_duration;
     }
-    
-    &:insensitive {
-      color: $disabled_fg_color; 
-    }
+    &.selected:active { color: $fg_color; }
+    &:insensitive { color: $disabled_fg_color; }
   }
-  
-  .popup-inactive-menu-item {
-    color: $fg_color; 
-    &:insensitive {
-      color: $disabled_fg_color; 
-    }
+
+  .popup-inactive-menu-item { //all icons and other graphical elements
+    color: $fg_color;
+
+    &:insensitive { color: $hint_fg_color; }
   }
-  
+  //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
   &.panel-menu {
-    -boxpointer-gap: $no_padding;
-    margin-bottom: $large_padding; 
+    -boxpointer-gap: 0px;
+    margin-bottom: 1.75em;
   }
 }
 
 .popup-menu-ornament {
   text-align: right;
   width: $popup_ornament_size; 
+}
+
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 0;
+  -arrow-background-color: transparent;
+  -arrow-border-width: 0;
+  -arrow-border-color: transparent;
+  -arrow-base: 0;
+  -arrow-rise: 0;
+  -arrow-box-shadow: none; //dreaming. bug #689995
+  margin: 5px 8px 8px;
+  background-color: $base_color;
+  border-radius: $pop_radius;
+  box-shadow: $shadow_2;
 }
 
 .popup-separator-menu-item {
@@ -76,6 +95,7 @@
 .system-menu-action {
   color: $secondary_fg_color;
   border-radius: $circular_radius;
+  border: none;
   /* wish we could do 50% */
   padding: $standard_padding; 
 
