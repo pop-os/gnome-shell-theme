@@ -24,8 +24,7 @@
   }
 
 .dash-item-container {
-  padding-top: 0;
-  padding-bottom: $small_padding;
+  padding: 8px;
   
   > StWidget {
     padding: 0;
@@ -39,8 +38,4 @@
   background-color: $inverse_bg_color;
   text-align: center;
   -x-offset: 8px; 
-}
-
-.show-apps-icon {
-  padding: 8px;
 }
