@@ -3,10 +3,10 @@
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("assets/corner-ripple-ltr.png");
+  background-image: url("assets/corner-ripple-ltr.svg");
   background-size: contain; 
 
   .ripple-box:rtl {
-    background-image: url("assets/corner-ripple-rtl.png"); 
+    background-image: url("assets/corner-ripple-rtl.svg"); 
   }
 }
