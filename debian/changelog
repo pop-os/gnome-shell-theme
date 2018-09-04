@@ -1,3 +1,17 @@
+pop-gnome-shell-theme (4.0.5) bionic; urgency=medium
+
+  * Fix padding on dash-to-dock item
+  * Fix problem with arrow background colors in non-pop session.
+  * Fix URL of ripple effect image
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 04 Sep 2018 10:33:34 -0600
+
+pop-gnome-shell-theme (4.0.3) bionic; urgency=medium
+
+  * Fix for cosmic packaging
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 21 Aug 2018 10:54:53 -0600
+ 
 pop-gnome-shell-theme (4.0.2cosmic0) cosmic; urgency=medium
 
   * Cosmic release

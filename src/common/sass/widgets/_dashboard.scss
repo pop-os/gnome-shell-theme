@@ -24,12 +24,7 @@
   }
 
 .dash-item-container {
-  padding-top: 0;
-  padding-bottom: $small_padding;
-  
-  > StWidget {
-    padding: 0;
-  } 
+  padding: 6px;
 }
 
 .dash-label {
@@ -41,6 +36,6 @@
   -x-offset: 8px; 
 }
 
-.show-apps-icon {
-  padding: 8px;
+.show-apps {
+  padding-right: 8px;
 }
