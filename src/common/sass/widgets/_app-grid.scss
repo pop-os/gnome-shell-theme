@@ -8,6 +8,8 @@
   -shell-grid-vertical-item-size: 136px; 
 }
 
+.overview-icon { icon-size: $large_icon_size*2; }
+
 .system-action-icon {
   margin: 8px 0 $tiny_padding;
   background-color: $inverse_bg_color;

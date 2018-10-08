@@ -24,7 +24,15 @@
   }
 
   .dash-item-container {
-    padding: 4px;
+    padding-top: 1px;
+  }
+  
+  .app-well-app-running-dot {
+    width: $app_running_indicator_size*4;
+    height: $app_running_indicator_size/4;
+    background-color: $accent_color;
+    margin-top: $no_padding; 
+    border-radius: $pop_radius;
   }
 }
 
