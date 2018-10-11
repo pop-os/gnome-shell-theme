@@ -6,7 +6,7 @@ SASSC_OPT=-M -t expanded
 BASE_DIR=/usr/share/themes
 REPODIR=$(CURDIR)
 SRCDIR=$(REPODIR)/build
-GNOMEVER=3.28
+GNOMEVER=3.30
 DEBIAN=0
 
 all: gnome-shell
