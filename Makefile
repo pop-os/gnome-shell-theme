@@ -1,12 +1,12 @@
 SHELL = /bin/bash
 COLOR_VARIANTS = '' '-dark' '-light'
 SIZE_VARIANTS = '' '-slim'
-VERSIONS = '3.18' '3.26' '3.28'
+VERSIONS = '3.18' '3.26' '3.28' '3.30'
 SASSC_OPT=-M -t expanded
 BASE_DIR=/usr/share/themes
 REPODIR=$(CURDIR)
 SRCDIR=$(REPODIR)/build
-GNOMEVER=3.26
+GNOMEVER=3.28
 DEBIAN=0
 
 all: gnome-shell
