@@ -1,3 +1,10 @@
+pop-gnome-shell-theme (4.0.8) bionic; urgency=medium
+
+  * Adds support for GNOME Shell 3.30
+  * Fixes sliders in 3.30
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 11 Oct 2018 11:51:24 -0600
+
 pop-gnome-shell-theme (4.0.7) bionic; urgency=medium
 
   * Fix icon-overlapping issue (#23)
