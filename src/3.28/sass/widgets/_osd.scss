@@ -1,0 +1,51 @@
+/* 
+ * OSD *
+ */
+ 
+%osd-panel {
+  color: $fg_color;
+  background-color: $base_color;
+  border: none;
+  box-shadow: $shadow_4;
+  border-radius: $pop_radius;
+  padding: $standard_padding;
+}
+
+.osd-window {
+  @extend %osd-panel;
+  text-align: center;
+  font-size: 13pt;
+  font-weight: 400;
+  spacing: $standard_padding;
+  margin: $huge_padding;
+  min-width: $osd_size;
+  min-height: $osd_size; 
+  
+  .osd-monitor-label {
+    font-size: 3em; 
+  }
+  
+  .level {
+    height: $osd_bar_size;
+    border-radius: $circular_radius;
+    background-color: $track_color;
+    color: $primary_color; 
+  }
+  
+  .level-bar {
+    background-color: $primary_color;
+    border-radius: $circular_radius; 
+  }
+}
+
+/* Pad OSD */
+.pad-osd-window {
+  padding: $huge_padding;
+  background-color: $bg_color; 
+  
+  .pad-osd-title-box { spacing: 12px; }
+  
+  .pad-osd-title-menu-box { spacing: 6px; }
+}
+
+.combo-box-label { width: 15em; }
