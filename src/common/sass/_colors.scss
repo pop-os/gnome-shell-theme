@@ -11,6 +11,34 @@
   @return mix($c, $grey_800, 75%);
 }
 
+// Some color functions to opacitize colors for certain functions
+@function to800($color) {
+  @return rgba($color, 0.8);
+}
+@function to600($color) {
+  @return rgba($color, 0.6);
+}
+@function to400($color) {
+  @return rgba($color, 0.4);
+}
+@function to200($color) {
+  @return rgba($color, 0.2);
+}
+@function to100($color) {
+  @return rgba($color, 0.1);
+}
+@function to50($color) {
+  @return rgba($color, 0.05);
+}
+
+// Main Accent Colors
+$color_theme_1: if($variant=='dark', $blue_700, $blue_500);
+$light_color_1: $blue_300;
+$dark_color_1: $blue_700;
+$color_theme_2: if($variant=='dark', $orange_700, $orange_500);
+$light_color_2: $orange_300;
+$dark_color_2: $orange_900;
+
 // Foreground colors
 $dark_fg_color:   rgba($brown_700, 0.87);
 $light_fg_color:  $white;

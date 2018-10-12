@@ -17,26 +17,54 @@
 }
 
 .modal-dialog-linked-button {
-  min-height: $button_size * 2;
-  padding: 0 $large_padding;
-  border-top: $border_size solid $border_color !important;
-  border-right-width: 0;
+  min-height: $button_size;
+  margin: 6px 0;
+  padding: $tiny_padding - 2px $large_padding;
   @include font(button);
   @include button(flat-normal);
-  &:hover { @include button(flat-hover); }
-  &:active { @include button(flat-active); }
-  &:insensitive { @include button(flat-insensitive); }
-  &:focus { @include button(flat-focus); }
+  background-color: $base_color;
+  color: $fg_color;
+  
+  &:focus { 
+    @include button(flat-focus);
+    background-color: $base_color;
+    color: $color_theme_2;
+  }
+  
+  &:hover { 
+    @include button(flat-hover);
+    background-color: to100($color_theme_2);
+    
+    &:focus {
+      color: $color_theme_2;
+    }
+  }
+  
+  &:active { 
+    @include button(flat-active);
+    background-color: to200($color_theme_2);
+    
+    &:focus {
+      color: $color_theme_2;
+    }
+  }
+  
+  &:insensitive { 
+    @include button(flat-insensitive);
+  }
 
   &:first-child {
-    border-radius: 0 0 0 $pop_radius;
+    margin-left: 6px;
+    border-radius: $pop_radius 0 0 $pop_radius;
   }
   &:last-child {
+    margin-right: 6px;
     border-right-width: 0;
-    border-radius: 0 0 $pop_radius 0;
+    border-radius: 0 $pop_radius $pop_radius 0;
   }
   &:first-child:last-child {
+    margin: 6px;
     border-right-width: 0;
-    border-radius: 0 0 $pop_radius $pop_radius;
+    border-radius: $pop_radius;
   }
 }
