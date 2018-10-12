@@ -7,24 +7,33 @@
   color: $inverse_fg_color;
   background-color: rgba($inverse_bg_color, 0.85);
   border-radius: 0 $pop_radius $pop_radius 0; 
-}
-  #dash:rtl {
+
+  &:rtl {
     border-radius: $pop_radius 0 0 $pop_radius;
   }
   
-  #dash .placeholder {
+  .placeholder {
     background-image: url("assets/dash-placeholder.svg");
     background-size: .5*$small_icon_size;
     height: .5*$small_icon_size; 
   }
   
-  #dash .empty-dash-drop-target {
+  .empty-dash-drop-target {
     width: 24px;
     height: 24px; 
   }
 
-.dash-item-container {
-  padding: 6px;
+  .dash-item-container {
+    padding-top: 1px;
+  }
+  
+  .app-well-app-running-dot {
+    width: $app_running_indicator_size*4;
+    height: $app_running_indicator_size/4;
+    background-color: $accent_color;
+    margin-top: $no_padding; 
+    border-radius: $pop_radius;
+  }
 }
 
 .dash-label {
@@ -37,5 +46,5 @@
 }
 
 .show-apps {
-  padding-right: 8px;
+  padding: 8px;
 }
