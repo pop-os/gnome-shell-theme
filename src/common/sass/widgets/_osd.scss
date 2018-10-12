@@ -27,13 +27,6 @@
   
   .level {
     height: $osd_bar_size;
-    border-radius: $circular_radius;
-    background-color: $track_color;
-    color: $primary_color; 
-  }
-  
-  .level {
-    height: $osd_bar_size;
     -barlevel-height: $osd_bar_size;
     -barlevel-background-color: $track_color;
     -barlevel-active-background-color: $color_theme_1;
