@@ -3,9 +3,14 @@
  */
  
 .toggle-switch {
-  width: 54px;
-  height: 19px;
-  background-size: 50px 27px;
+  width: 42px;
+  height: 20px;
+  background-size: 44px 22px;
+  background-clip: content-box;
+}
+
+.toggle-switch + StLabel {
+  margin-top: 150px;
 }
 
 .toggle-switch-us,
