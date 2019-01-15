@@ -1,3 +1,9 @@
+pop-gnome-shell-theme (4.0.9) cosmic; urgency=medium
+
+  * Bugfix: Update styling to reduce the indcidence of log spam. (#68)
+
+ -- Ian Santopietro <isantop@gmail.com>  Wed, 09 Jan 2019 10:34:58 -0700
+
 pop-gnome-shell-theme (4.0.8) bionic; urgency=medium
 
   * Adds support for GNOME Shell 3.30
