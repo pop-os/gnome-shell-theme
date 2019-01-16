@@ -82,7 +82,7 @@ sudo apt build-dep pop-gnome-shell-theme
 
 Or, use this to install all dependencies in one go:
 ```
-sudo apt install libsass0 sassc inkscape optipng libglib2.0-dev-bin
+sudo apt install sassc inkscape optipng libglib2.0-dev-bin
 ```
 
 3. Generate the theme files.
