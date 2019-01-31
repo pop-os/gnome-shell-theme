@@ -20,7 +20,7 @@
   background-color: $bg_color;
   box-shadow: $shadow_4;
   border: none;
-  width: $modal_size;
+  //width: $modal_size;
   
   .modal-dialog-content-box {
     padding: $huge_padding; 
@@ -98,7 +98,6 @@
 }
 
 .end-session-dialog-description {
-  width: $modal_size;
   padding-bottom: $standard_padding; 
   color: $secondary_fg_color;
   &:rtl {
@@ -107,7 +106,6 @@
 }
 
 .end-session-dialog-warning {
-  width: $modal_size;
   color: $error_color;
   padding-top: $tiny_padding; 
   &:rtl {
@@ -174,7 +172,6 @@
     padding-top: $standard_padding;
     padding-left: $large_padding;
     padding-bottom: $tiny_padding;
-    max-width: $modal_size; 
     &:rtl {
       padding-left: 0;
       padding-right: $large_padding; 
@@ -183,7 +180,6 @@
   
   .message-dialog-body {
     padding-left: $large_padding;
-    width: $modal_size - 2em; 
     &:rtl {
       padding-left: 0;
       padding-right: $large_padding;  
@@ -227,7 +223,6 @@
 
 /* Password or Authentication Dialog */
 .prompt-dialog {
-  width: $modal_size+5em;
   
   .message-dialog-main-layout {
     spacing: $huge_padding;
