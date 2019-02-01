@@ -1,3 +1,9 @@
+pop-gnome-shell-theme (4.0.12) cosmic; urgency=medium
+
+  * Allow dialogs to use variable width. (#73 and #74)
+
+ -- Ian Santopietro <isantop@gmail.com>  Thu, 31 Jan 2019 15:55:32 -0700
+
 pop-gnome-shell-theme (4.0.10) cosmic; urgency=medium
 
   * Fix invisible switches in dark variant (#66)
