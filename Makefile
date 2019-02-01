@@ -1,12 +1,12 @@
 SHELL = /bin/bash
 COLOR_VARIANTS = '' '-dark' '-light'
 SIZE_VARIANTS = '' '-slim'
-VERSIONS = '3.18' '3.26' '3.28' '3.30'
+VERSIONS = '3.18' '3.26' '3.28' '3.30' '3.32'
 SASSC_OPT=-M -t expanded
 BASE_DIR=/usr/share/themes
 REPODIR=$(CURDIR)
 SRCDIR=$(REPODIR)/build
-GNOMEVER=3.30
+GNOMEVER=$(shell gnome-shell --version | cut -d ' ' -f3 | cut -d '.' -f1,2)
 DEBIAN=0
 
 all: gnome-shell
