@@ -223,6 +223,8 @@
 
 /* Password or Authentication Dialog */
 .prompt-dialog {
+
+  width: $modal_size;
   
   .message-dialog-main-layout {
     spacing: $huge_padding;
