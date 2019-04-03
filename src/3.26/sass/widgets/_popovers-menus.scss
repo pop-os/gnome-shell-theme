@@ -1,0 +1,153 @@
+/* 
+ * Popovers/Menus * 
+ */
+ 
+.popup-menu {
+  min-width: 200px;
+
+  .popup-menu-arrow { } //defined globally in the TOP BAR
+  .popup-sub-menu {
+    background-color: $alt_base_color;
+    box-shadow: $shadow_0;
+  }
+
+  .popup-menu-content { padding: 8px 0; }
+  .popup-menu-item {
+    // min-height: $menuitem_size - 4px * 2;
+    spacing: 8px;
+    transition-duration: $shorter_duration;
+    border: none;
+
+    &:ltr { padding: 0.4em 24px 0.4em 0; }
+    &:rtl { padding: 0.4em 0 0.4em 24px; }
+    &:checked {
+      background-color: darken($accent_color, 0.5);
+      color: $inverse_fg_color;
+      box-shadow: $shadow_0;
+      font-weight: normal;
+      border: none;
+      
+      &.selected {
+        background-color: mix($inverse_fg_color, darken($accent_color, 0.5), percentage($lower_opacity / 2));
+        color: $inverse_fg_color;
+      }
+      &:active {
+        background-color: mix($inverse_fg_color, darken($accent_color, 0.5), percentage($lower_opacity));
+        color: $inverse_fg_color !important;
+      }
+      &:insensitive { color: $inverse_disabled_fg_color; }
+    }
+    &.selected {
+      background-color: $divider_color;
+      color: $fg_color;
+      transition-duration: 0ms;
+    }
+    &:active {
+      background-color: $track_color;
+      color: $fg_color;
+      transition-duration: $longer_duration;
+    }
+    &.selected:active { color: $fg_color; }
+    &:insensitive { color: $disabled_fg_color; }
+  }
+
+  .popup-inactive-menu-item { //all icons and other graphical elements
+    color: $fg_color;
+
+    &:insensitive { color: $hint_fg_color; }
+  }
+  //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
+  &.panel-menu {
+    -boxpointer-gap: 0px;
+    margin-bottom: 1.75em;
+  }
+}
+
+.popup-menu-ornament {
+  text-align: right;
+  width: $popup_ornament_size; 
+}
+
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 0;
+  -arrow-background-color: transparent;
+  -arrow-border-width: 0;
+  -arrow-border-color: transparent;
+  -arrow-base: 0;
+  -arrow-rise: 0;
+  -arrow-box-shadow: none; //dreaming. bug #689995
+  margin: 5px 8px 8px;
+  background-color: $base_color;
+  border-radius: $pop_radius;
+  box-shadow: $shadow_2;
+}
+
+.popup-separator-menu-item {
+  height: $border_size;
+  margin: $small_padding 5px+$huge_padding;
+  background-color: transparent;
+  border-color: $border_color;
+  border-bottom-width: $border_size;
+  border-bottom-style: solid; 
+}
+
+.system-menu-action {
+  color: $secondary_fg_color;
+  border-radius: $circular_radius;
+  border: none;
+  /* wish we could do 50% */
+  padding: $standard_padding; 
+  -st-icon-style: symbolic;
+
+  &:hover,
+  &:focus {
+    background-color: $disabled_secondary_fg_color;
+    color: $fg_color;
+    border: none;
+    padding: $standard_padding; 
+  }
+  
+  &:active {
+    background-color: $disabled_fg_color;
+    color: $fg_color; 
+  }
+  
+  > StIcon {
+    icon-size: 16px; 
+  }
+}
+
+.system-switch-user-submenu-icon.user-icon {
+  icon-size: 5px+$small_icon_size;
+  margin: 0 $user_icon_padding 0 $user-icon-padding;
+  border-radius: $circular_radius;
+  background-size: contain;  
+}
+
+.system-switch-user-submenu-icon.default-icon {
+  icon-size: 5px+$small_icon_size;
+  margin: 0 $user_icon_padding 0 $user-icon-padding;
+  border-radius: $circular_radius;
+  background-size: contain;  
+}
+
+/* fallback menu
+- odd thing for styling App menu when apparently not running under shell. Light Adwaita styled
+  app menu inside the main app window itself rather than the top bar
+*/
+
+.aggregate-menu {
+  min-width: 21em; 
+  .popup-menu-icon {
+    padding: 0 4px; 
+  }
+  .popup-sub-menu .popup-menu-item :first-child:ltr {
+    padding-left: $submenu_padding;
+    margin-left: 1em; 
+  }
+  .popup-sub-menu .popup-menu-item :first-child:rtl {
+    padding-right: $submenu_padding;
+    margin-right: 1em; 
+  }
+}
