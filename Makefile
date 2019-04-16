@@ -27,7 +27,7 @@ uninstall:
 	-rm -rf /usr/share/gnome-shell/theme/pop.css
 
 install:
-	@echo "** Installing the theme..."
+	@echo "** Installing the theme for GNOME version $(GNOMEVER)..."
 
 	# Install GNOME Shell Theme
 	for color in $(COLOR_VARIANTS); do \
