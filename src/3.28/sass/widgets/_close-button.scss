@@ -1,0 +1,14 @@
+/* 
+ * Window Close Button *
+ */
+
+.window-close {
+  background-image: url("assets/window-close.svg");
+  background-size: 36px;
+  height: 36px;
+  width: 36px;
+  -shell-close-overlap: 29px; 
+  
+  &:hover,
+  &:active { background-image: url("assets/window-close-active.svg"); }
+}
