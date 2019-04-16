@@ -94,6 +94,7 @@ $primary_color:         $blue_500;
 $alt_primary_color:     $blue_300;
 $accent_color:          $orange_500;
 $disabled_accent_color: rgba($accent_color, 0.5);
+$close_button_color: mix($orange_500, $red_500, 50%);
 
 $keyboard_fg_color: rgba($white, 0.7);
 $keyboard_focus_fg_color: $white;

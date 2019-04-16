@@ -3,12 +3,20 @@
  */
 
 .window-close {
-  background-image: url("assets/window-close.svg");
-  background-size: 36px;
-  height: 36px;
-  width: 36px;
-  -shell-close-overlap: 29px; 
-  
-  &:hover,
-  &:active { background-image: url("assets/window-close-active.svg"); }
+  padding: 4px;
+  background-color: $close_button_color;
+  border-radius: $circular_radius;
+  color: $white;
+  height: 24px;
+  width: 24px;
+  font-size: 5px;
+  -shell-close-overlap: 14px;
+
+  &:hover {
+    background-color: mix($close_button_color, $white, 80%);
+  }
+
+  &:active {
+    background-color: mix($close_button_color, $white, 60%);
+  }
 }
