@@ -86,15 +86,6 @@
   spacing: 2*$mini_padding; 
 }
 
-.weather-forecast-icon {
-  icon-size: 2.18em;
-}
-
-.weather-forecast-time {
-  color: darken($fg_color,40%);
-  font-size: 0.8em;
-}
-
 .calendar-month-label {
   color: $secondary_fg_color;
   font-weight: 400;
@@ -116,10 +107,6 @@
   &:active {
     background-color: $divider_color; 
   }
-}
-
-.calendar-change-month-back StIcon, .calendar-change-month-forward StIcon { // arrows
-  icon-size: 16px;
 }
 
 .calendar-change-month-back {
