@@ -10,7 +10,8 @@
 }
 
 .toggle-switch-us,
-.toggle-switch-intl {
+.toggle-switch-intl,
+.toggle-switch {
   background-image: url("assets/switch-off.svg");
   
   &:checked {
