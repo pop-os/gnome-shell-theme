@@ -8,3 +8,9 @@
     border-width: 0; 
   }
 }
+
+// Selection area for screenshots
+.select-area-rubberband {
+  background-color: rgba($color_theme_1, 0.5);
+  border: 1px solid $color_theme_1;
+}
