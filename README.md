@@ -1,15 +1,6 @@
-<p align="center">
-<img src="https://github.com/system76/pop-gtk-theme/raw/master/Pop_gtk-logo.png"/>
-</p>
+## Legacy Work Only!
 
--------------------
-
-## The Pop GNOME Shell theme. 
-
-This is the GNOME Shell theme that goes along with the [Pop GTK Theme](https://github.com/pop-os/gtk-theme).
-It's built and managed separately so that changes in one don't necessarily
-require building unrelated components. This also allows cleaner builds and 
-easier maintenance.
+This is the legacy version of the Pop GNOME Shell theme which currently only applies to Pop 18.04. It is only in maintenance mode, and will receive only minor changes and development related to security or bugfixes for **GNOME 3.28 ONLY**. Current development happens in the [pop-os/gtk-theme](https://github.com/pop-os/gtk-theme) repository.
 
 
 ### Required Components
